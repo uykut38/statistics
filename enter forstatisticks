@@ -1,0 +1,144 @@
+Lesson 1: Statistics
+
+Statistics:
+Statistics is the science of collecting, analyzing, interpreting, and drawing conclusions from data.
+
+Basic Steps of Statistics
+
+1. Data Collection
+2. Data Summarization (Generalization)
+3. Data Visualization
+
+Advanced Steps of Statistics
+
+1. Making Inferences
+2. Data Analysis
+3. Hypothesis Testing
+
+Types of Statistics
+
+1. Descriptive Statistics
+
+Descriptive statistics is the branch of statistics that describes and summarizes the characteristics of data using tables, graphs, and numerical measures.
+
+2. Inferential Statistics
+
+Inferential statistics is the branch of statistics that uses sample data to draw conclusions and make predictions about a population.
+
+Steps of Statistical Analysis
+
+1. Define the Problem
+Identify the research question or problem.
+
+2. Collect Data
+Gather data using reliable methods.
+
+3. Analyze the Data
+Analyze the collected data using mathematical and logical methods.
+
+4. Draw Conclusions
+Reach scientific conclusions based on the analysis results.
+
+Types of Data
+
+1. Qualitative (Categorical) Data
+
+Qualitative data cannot be measured numerically but can be classified into categories.
+
+They are divided into two types:
+
+Nominal Data
+Examples:
+Gender
+Nationality
+Blood Group
+
+Ordinal Data
+Examples:
+First
+Second
+Third
+
+2. Quantitative (Numerical) Data
+
+Quantitative data can be measured and expressed numerically.
+
+They are divided into two types:
+
+Interval Data
+
+Ratio Data
+
+Examples:
+
+7 hours
+100 kilograms
+10 meters
+
+Measures of Central Tendency
+
+Mode
+
+Median
+
+Mean (Arithmetic Mean)
+
+Mode
+
+The mode is the value that appears most frequently in a data set.
+
+Example:
+
+5, 6, 3, 5, 9, 8, 5, 10, 5, 11, 23
+
+Since the number 5 appears most frequently, the mode is 5.
+
+Median
+
+The median is the middle value after arranging the data from the smallest to the largest.
+
+If the Number of Data Values is Odd
+
+The middle value is the median.
+
+If the Number of Data Values is Even
+
+The median is the average of the two middle values.
+
+Sum and Arithmetic Mean
+
+Sum
+
+The sum is the total obtained by adding all the values together.
+
+In statistics, it is used to determine the total amount of the data.
+
+Calculation:
+
+10 + 15 + 20 + 25 + 30 = 100
+
+Result:
+
+A total of 100 people entered the warehouse over these five days.
+
+Arithmetic Mean
+
+The arithmetic mean is obtained by dividing the sum of all values by the total number of values.
+
+It represents the overall average of the data.
+
+Calculation:
+
+Total = 100
+
+Number of observations = 5
+
+Mean = 100 / 5 = 20
+
+Result:
+
+On average, 20 people entered the warehouse per day during these five days.
+
+Arithmetic Mean Formula
+
+Mean = (X1 + X2 + X3 + ... + Xn) / n
