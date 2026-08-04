@@ -1,0 +1,131 @@
+
+
+# 1. Ders: İstatistik
+
+**İstatistik:** Veri toplama, analiz etme ve sonuç çıkarma bilimidir.
+
+## Başlangıç Düzeyinde İstatistik Yapma Aşamaları
+
+1. Veri toplama
+2. Verileri özetleme (genelleştirme)
+3. Verileri görselleştirme
+
+## İleri Düzeyde İstatistik Yapma Aşamaları
+
+1. Çıkarım yapma (Inference)
+2. Analiz etme
+3. Hipotezi test etme
+
+## İstatistik İki Türe Ayrılır
+
+### 1. Betimsel İstatistik (Descriptive Statistics)
+
+Verilerin özelliklerini ve durumunu grafikler, tablolar ve sayısal özetler yardımıyla açıklayan istatistik yöntemidir.
+
+### 2. Çıkarımsal İstatistik (Inferential Statistics)
+
+Örneklemden elde edilen verilere dayanarak anakütle (evren) hakkında tahminlerde bulunmayı ve sonuç çıkarmayı sağlayan istatistik yöntemidir.
+
+# İstatistiksel Analiz Aşamaları
+
+1. **Problemi belirleme:** Araştırılacak olay veya soruyu belirlemek.
+
+2. **Veri toplama:** Güvenilir yöntemlerle gerekli verileri toplamak.
+
+3. **Analiz etme:** Toplanan verileri matematiksel ve mantıksal yöntemlerle incelemek.
+
+4. **Sonuç çıkarma:** Analiz sonuçlarına dayanarak bilimsel sonuçlara ulaşmak.
+
+# Veri Türleri
+
+## 1. Nitel (Kalitatif) Veriler
+
+Ölçülemeyen, sınıflandırılabilen verilerdir.
+
+Bunlar ikiye ayrılır:
+
+* **Nominal (İsimsel) Veriler:** Cinsiyet, milliyet, kan grubu vb.
+* **Ordinal (Sıralı) Veriler:** Birinci, ikinci, üçüncü gibi sıralama bildiren veriler.
+
+## 2. Nicel (Kantitatif) Veriler
+
+Ölçülebilen ve sayısal olarak ifade edilen verilerdir.
+
+Bunlar ikiye ayrılır:
+
+* Aralık (Interval) verileri
+* Oran (Ratio) verileri
+
+Örnekler:
+
+* 7 saat
+* 100 kilogram
+* 10 metre
+
+# Merkezi Eğilim Ölçüleri
+
+Merkezi eğilim ölçüleri şunlardır:
+
+* Mod
+* Medyan
+* Aritmetik Ortalama (Mean)
+
+## Mod
+
+Bir veri grubunda en fazla tekrar eden değere **mod** denir.
+
+### Örnek
+
+5, 6, 3, 5, 9, 8, 5, 10, 5, 11, 23
+
+Bu veri grubunda **5** sayısı en fazla tekrar ettiği için **mod = 5** olur.
+
+## Medyan (Ortanca)
+
+Veriler küçükten büyüğe sıralandığında tam ortada kalan değere **medyan (ortanca)** denir.
+
+### Tek Sayıda Veri Varsa
+
+Veri sayısı tek ise ortadaki değer medyandır.
+
+### Çift Sayıda Veri Varsa
+
+Veri sayısı çift ise ortadaki iki değerin aritmetik ortalaması medyan olur.
+
+# Toplam ve Aritmetik Ortalama
+
+## Toplam
+
+Toplam, bütün sayıların birbiriyle toplanması sonucu elde edilen değerdir.
+
+İstatistikte verilerin toplam büyüklüğünü göstermek için kullanılır.
+
+### Hesaplama
+
+Günlük kişi sayıları:
+
+10 + 15 + 20 + 25 + 30 = 100
+
+**Sonuç:** Bu 5 günde depoya toplam **100 kişi** girmiştir.
+
+## Aritmetik Ortalama
+
+Aritmetik ortalama, bütün sayıların toplamının veri sayısına bölünmesiyle elde edilir.
+
+Bu değer, verilerin genel eğilimini gösterir.
+
+### Hesaplama
+
+Toplam = 100
+
+Veri sayısı = 5
+
+Ortalama = 100 / 5 = 20
+
+**Sonuç:** Bu 5 günde depoya günde ortalama **20 kişi** girmiştir.
+
+# Aritmetik Ortalama (Mean) Formülü
+
+Aritmetik Ortalama (Mean)
+
+= (X1 + X2 + X3 + ... + Xn) / n
