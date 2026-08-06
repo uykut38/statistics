@@ -1,0 +1,334 @@
+5. Ders
+Verilerin Görselleştirilmesi
+
+İnsan beyni verileri görseller aracılığıyla çok daha hızlı anlar.
+
+Beynin özelliği:
+Bilginin büyük bir kısmı gözler aracılığıyla algılanır.
+
+Görselleştirmenin avantajları:
+
+1. Hızlı anlama:
+   Desenler, eğilimler ve sapmalar hemen fark edilir.
+
+2. Karşılaştırma:
+   Gruplar arasındaki farklar kolayca görülür.
+
+3. İletişim:
+   Verileri başkalarına anlatmak daha kolay olur.
+
+4. Gizli bilgileri ortaya çıkarma:
+   Sayı tablolarında fark edilmeyen düzenleri keşfetmemizi sağlar.
+
+--------------------------------------------------
+
+Altı temel grafik türü
+
+1. Histogram
+   Sürekli sayısal verilerin dağılımını gösterir.
+
+2. Bar Chart
+   Kategorik (nitel) verileri karşılaştırmak için kullanılır.
+
+3. Pie Chart
+   Bir bütünün parçalarını ve oranlarını gösterir.
+
+4. Line Chart
+   Zaman içerisindeki değişimi gösterir.
+
+5. Box Plot
+   Dağılımı ve aykırı değerleri gösterir.
+
+6. Stem and Leaf Plot
+   Orijinal verileri koruyarak gösterir.
+
+En önemli kural:
+Her grafik türünün kendine uygun bir kullanım alanı vardır.
+Yanlış grafik seçmek yanlış bilgi verilmesine neden olabilir.
+
+Grafik seçerken sorulması gereken temel sorular:
+
+• Veri türü nedir?
+  (Sayısal mı, kategorik mi?)
+
+• Neyi göstermek istiyorum?
+  (Dağılım, karşılaştırma, zaman içindeki değişim veya oran?)
+
+• Kime sunuyorum?
+  (Uzmanlara mı, genel kullanıcılara mı?)
+
+==================================================
+Histogram
+==================================================
+
+Kullanım amacı:
+Sürekli sayısal verilerin dağılımını göstermek için kullanılır.
+
+Özellikleri:
+
+• Sütunlar birbirine bitişiktir.
+• Aralarında boşluk yoktur.
+• Çünkü veriler süreklidir.
+• Sıralama önemlidir.
+
+Histogramdan neler okunabilir?
+
+• Şekil:
+  Simetrik veya normale yakın mı?
+
+• Merkez:
+  Veriler hangi aralıkta yoğunlaşmış?
+
+• Dağılım:
+  Veriler geniş mi dar mı yayılmış?
+
+• Aykırı değer:
+  Olağan dışı değer var mı?
+
+Dikkat:
+Histogram ile Bar Chart birbirine karıştırılmamalıdır.
+
+==================================================
+Bar Chart
+==================================================
+
+Kullanım amacı:
+Kategorik (nitel) verileri karşılaştırmak için kullanılır.
+
+Özellikleri:
+
+• Sütunlar birbirinden ayrıdır.
+• Birbirine temas etmez.
+• Çünkü kategoriler birbirinden bağımsızdır.
+• Sıralama zorunlu değildir.
+  (Genellikle büyükten küçüğe veya alfabetik sıralanır.)
+
+Not:
+Bar Chart yatay veya dikey çizilebilir.
+Histogram ise yalnızca dikey olarak kullanılır.
+
+==================================================
+Pie Chart
+==================================================
+
+Kullanım amacı:
+
+Bir bütünün parçalarını göstermek için kullanılır.
+
+Kurallar:
+
+• Tüm dilimlerin toplamı %100 olmalıdır.
+• Kategori sayısı az olduğunda daha uygundur.
+  (Tercihen 5-7 kategoriyi geçmemelidir.)
+
+Avantajları:
+
+• Bütün ile parçalar arasındaki ilişkiyi gösterir.
+• Genel kullanıcılar için anlaşılması kolaydır.
+• Sunumlarda ve reklamlarda sık kullanılır.
+
+Dezavantajları:
+
+• Kategori sayısı fazla olursa karmaşık görünür.
+• Benzer büyüklükteki dilimleri ayırt etmek zordur.
+• Zaman içindeki değişimi gösteremez.
+• Kesin sayıları okumak zordur.
+
+Not:
+Sadece sayıları karşılaştırmak istiyorsanız Bar Chart daha uygundur.
+Pie Chart yalnızca bütünün hangi kısmının ne kadar olduğunu göstermek için kullanılır.
+
+==================================================
+Line Chart
+==================================================
+
+Kullanım amacı:
+
+Zaman içerisindeki değişimi göstermek için kullanılır.
+
+Gösterdiği bilgiler:
+
+• Eğilim (Trend)
+• Sürekli değişim
+• Mevsimsel değişimler
+
+Eksenler:
+
+X Ekseni = Zaman (Gün, Ay, Yıl)
+
+Y Ekseni = Değer
+
+==================================================
+Box Plot
+==================================================
+
+Kullanım amacı:
+
+• Verilerin dağılımını
+• Merkezi eğilimini
+• Aykırı değerleri
+
+tek bir grafikte göstermek için kullanılır.
+
+Birden fazla grubu karşılaştırmak için oldukça uygundur.
+
+Box Plot'tan okunabilecek bilgiler:
+
+• Medyan
+• Çeyrekler
+• Dağılım
+• Aykırı değerler
+
+==================================================
+Stem and Leaf Plot
+==================================================
+
+Kullanım amacı:
+
+Küçük ve orta büyüklükteki veri setlerini göstermek için kullanılır.
+
+Özelliği:
+
+Orijinal veriler korunur.
+Histogramda ise orijinal sayılar kaybolur.
+
+Her sayı iki parçaya ayrılır:
+
+Stem = İlk basamak(lar)
+
+Leaf = Son basamak
+
+Bu grafikten okunabilecek bilgiler:
+
+• Orijinal sayılar
+• Dağılım
+• Merkez
+• Medyan
+
+Avantajları:
+
+• Orijinal verileri korur.
+• Elle çizmesi kolaydır.
+• Küçük veri setleri için uygundur.
+• Ayrıntıları gösterir.
+
+Dezavantajları:
+
+• Büyük veri setleri için uygun değildir.
+• Görsel etkisi düşüktür.
+• Sunumlarda tercih edilmez.
+• Günümüzde daha az kullanılmaktadır.
+
+Uygulamada Stem and Leaf Plot daha çok eğitim amacıyla kullanılır.
+Gerçek analizlerde genellikle Histogram veya istatistik yazılımları tercih edilir.
+
+==================================================
+En önemli kural
+==================================================
+
+İyi bir grafik:
+
+• Doğru olmalıdır.
+• Anlaşılır olmalıdır.
+• Basit olmalıdır.
+
+==================================================
+Uygulamalı Örnekler
+==================================================
+
+Örnek 1
+
+Hastane - Hastaların Yaşları
+
+Amaç:
+Hangi yaş grubunda daha fazla hasta olduğunu görmek.
+
+Seçim:
+Histogram
+
+Neden?
+Yaş sürekli sayısal bir değişkendir ve dağılım incelenmek istenir.
+
+--------------------------------------------------
+
+Örnek 2
+
+Şirket - Bölümlerin Giderleri
+
+Amaç:
+Hangi bölümün daha fazla harcama yaptığını karşılaştırmak.
+
+Seçim:
+Bar Chart
+
+Neden?
+Bölümler kategorik veridir ve karşılaştırma yapılacaktır.
+
+--------------------------------------------------
+
+Örnek 3
+
+Devlet - Yıllık Nüfus Artışı
+
+Amaç:
+20 yıl içerisindeki değişimi göstermek.
+
+Seçim:
+Line Chart
+
+Neden?
+Zamana bağlı değişim gösterilmektedir.
+
+--------------------------------------------------
+
+Örnek 4
+
+Okul - Öğrencilerin Gelir Durumu
+
+Amaç:
+Varlıklı ve düşük gelirli ailelerin oranını göstermek.
+
+Seçim:
+Pie Chart
+
+Neden?
+Bir bütünün parçalarını göstermektedir.
+
+--------------------------------------------------
+
+Örnek 5
+
+Fabrika - Üç Üretim Hattının Kalitesi
+
+Amaç:
+Üç üretim hattını karşılaştırmak.
+
+Seçim:
+Box Plot
+
+Neden?
+Birden fazla grubun dağılımı ve aykırı değerleri aynı anda görülebilir.
+
+--------------------------------------------------
+
+Örnek 6
+
+Öğretmen - 15 Öğrencinin Notları
+
+Amaç:
+Ayrıntıları görmek ve orijinal notları korumak.
+
+Seçim:
+Stem and Leaf Plot
+
+Neden?
+Veri sayısı azdır ve her bir değer önemlidir.
+
+==================================================
+
+Not:
+
+Aynı veri birden fazla grafik türü ile gösterilebilir.
+
+Önemli olan,
+amacınıza en uygun grafiği seçmektir.
