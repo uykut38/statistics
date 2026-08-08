@@ -1,0 +1,877 @@
+7. DERS
+
+DAĞILIM ÖLÇÜLERİ
+
+
+Ortalama değer tek başına yeterli değildir.
+Verilerin ne kadar dağıldığını da bilmek gerekir.
+
+
+ALTı TEMEL DAĞILIM ÖLÇÜSÜ
+
+1. Range = Aralık
+   En büyük değer - En küçük değer
+
+2. Variance = Varyans
+   Değerlerin ortalamadan olan farklarının karelerinin ortalaması.
+
+3. Standard Deviation = Standart Sapma
+   Varyansın kareköküdür ve en önemli dağılım ölçülerinden biridir.
+
+4. Quartile = Çeyrek Değer
+   Verileri dört bölüme ayırır.
+
+5. IQR = Çeyrekler Açıklığı
+   Q3 - Q1
+
+6. Percentile = Yüzdelik Dilim
+   Belirli bir değerin veri setindeki konumunu gösterir.
+
+
+BU ÖLÇÜLER NE İŞE YARAR?
+
+1. Verilerin ne kadar değişken olduğunu değerlendirmeye yardımcı olur.
+
+2. Riski anlamaya yardımcı olur.
+   Örneğin finans ve sigorta alanlarında kullanılır.
+
+3. Karşılaştırma yapmaya yardımcı olur.
+   İki grubun ortalaması aynı olabilir, ancak dağılımları farklı olabilir.
+
+4. Aykırı değerleri belirlemeye yardımcı olur.
+
+5. Normal dağılımı anlamaya yardımcı olur.
+
+
+
+RANGE
+
+
+Range, bir veri grubundaki en büyük değer ile en küçük değer arasındaki farktır.
+
+Basitçe:
+
+En büyük sayıdan en küçük sayıyı çıkarırsak, elde edilen sonuç Range olur.
+
+
+FORMÜL
+
+Range = Maximum Value - Minimum Value
+
+veya
+
+Range = Max - Min
+
+
+Burada:
+
+Max = En büyük değer
+
+Min = En küçük değer
+
+
+ÖRNEK
+
+Bir sınıftaki öğrencilerin sınav notları:
+
+60, 70, 75, 80, 90
+
+
+1. Adım: En büyük değeri buluruz.
+
+Maximum = 90
+
+
+2. Adım: En küçük değeri buluruz.
+
+Minimum = 60
+
+
+3. Adım: Range değerini hesaplarız.
+
+Range = 90 - 60
+
+Range = 30
+
+
+CEVAP
+
+Range = 30
+
+
+Yani bu veri setindeki en büyük değer ile en küçük değer arasındaki fark 30'dur.
+
+
+HATIRLANMASI GEREKEN KURAL
+
+Range = En büyük değer - En küçük değer
+
+
+Range büyükse:
+
+Veriler daha fazla dağılmıştır.
+
+
+Range küçükse:
+
+Veriler birbirine daha yakındır.
+
+
+AVANTAJLARI
+
+Hesaplanması çok kolaydır.
+
+Anlaşılması kolaydır.
+
+Verilerin genel yayılımını gösterir.
+
+
+DEZAVANTAJLARI
+
+Sadece iki değeri kullanır.
+
+Aykırı değerlere karşı çok duyarlıdır.
+
+Ortadaki değerlerin nasıl dağıldığını göstermez.
+
+
+Range sadece verilerin genel genişliğini gösterir.
+Daha ayrıntılı bilgi için diğer dağılım ölçülerine ihtiyaç vardır.
+
+
+
+QUARTILE
+
+
+Quartile, veriler küçükten büyüğe sıralandıktan sonra verileri dört bölüme ayıran değerlerdir.
+
+Basitçe:
+
+Quartile, veri setinin hangi bölümünde ne kadar veri bulunduğunu anlamamıza yardımcı olur.
+
+
+Quartile için üç temel değer vardır:
+
+Q1 = Birinci çeyrek
+
+Q2 = İkinci çeyrek
+
+Q3 = Üçüncü çeyrek
+
+
+Bu değerler verileri yaklaşık olarak dört bölüme ayırır.
+
+25%       25%       25%       25%
+ |---------|---------|---------|
+          Q1        Q2        Q3
+
+
+Q1 = Verilerin yaklaşık %25'i Q1 değerinin altındadır.
+
+Q2 = Verilerin yaklaşık %50'si Q2 değerinin altındadır.
+Q2 aynı zamanda Median değeridir.
+
+Q3 = Verilerin yaklaşık %75'i Q3 değerinin altındadır.
+
+
+FORMÜL
+
+Veri sayısı n ise:
+
+Q1 Position = (n + 1) / 4
+
+Q2 Position = (n + 1) / 2
+
+Q3 Position = 3(n + 1) / 4
+
+
+Burada:
+
+n = Veri sayısı
+
+
+ÖRNEK
+
+Aşağıdaki sayıları düşünelim:
+
+10, 20, 30, 40, 50, 60, 70
+
+
+Bu sayılar zaten küçükten büyüğe sıralanmıştır.
+
+
+Veri sayısı:
+
+n = 7
+
+
+1. Adım: Q1 değerini buluruz.
+
+Q1 Position = (n + 1) / 4
+
+Q1 Position = (7 + 1) / 4
+
+Q1 Position = 2
+
+
+2. sıradaki değer:
+
+Q1 = 20
+
+
+2. Adım: Q2 değerini buluruz.
+
+Q2 Position = (n + 1) / 2
+
+Q2 Position = (7 + 1) / 2
+
+Q2 Position = 4
+
+
+4. sıradaki değer:
+
+Q2 = 40
+
+
+Q2, Median ile aynıdır.
+
+
+3. Adım: Q3 değerini buluruz.
+
+Q3 Position = 3(n + 1) / 4
+
+Q3 Position = 3(7 + 1) / 4
+
+Q3 Position = 6
+
+
+6. sıradaki değer:
+
+Q3 = 60
+
+
+CEVAP
+
+Q1 = 20
+
+Q2 = 40
+
+Q3 = 60
+
+
+Yani bu veri setinde:
+
+25% → Q1 = 20
+
+50% → Q2 = 40
+
+75% → Q3 = 60
+
+
+HATIRLANMASI GEREKEN KURAL
+
+Q1 → 25th Percentile
+
+Q2 → 50th Percentile = Median
+
+Q3 → 75th Percentile
+
+
+Quartile'ın temel amacı, verilerin ne kadar dağıldığını ve sayıların hangi bölümlerde yoğunlaştığını anlamaktır.
+
+
+
+INTERQUARTILE RANGE
+
+
+Interquartile Range, yani IQR, verilerin ortadaki %50'lik bölümünün yayılımını gösterir.
+
+IQR, Q3 ile Q1 arasındaki farktır.
+
+
+FORMÜL
+
+IQR = Q3 - Q1
+
+
+AVANTAJLARI
+
+Aykırı değerlerden fazla etkilenmez.
+
+Verilerin ortadaki %50'sinin gerçek yayılımını gösterir.
+
+Gelir ve ev fiyatları gibi aykırı değerlerin fazla olduğu veriler için uygundur.
+
+
+
+AYKIRI DEĞERLERİ BELİRLEME
+
+IQR KURALI
+
+
+Bir değer aşağıdaki sınırların dışında kalıyorsa aykırı değer olarak kabul edilir.
+
+
+Alt sınır:
+
+Q1 - 1.5 × IQR
+
+
+Üst sınır:
+
+Q3 + 1.5 × IQR
+
+
+IQR, aykırı değerleri belirlemek için en yaygın kullanılan yöntemlerden biridir.
+
+
+
+VARIANCE
+
+
+Variance, bir veri grubundaki değerlerin ortalama etrafında ne kadar dağıldığını ölçen bir ölçüdür.
+
+Basitçe:
+
+Sayılar ortalamaya yakınsa Variance küçüktür.
+
+Sayılar ortalamadan uzaksa Variance büyüktür.
+
+
+FORMÜL
+
+Population Variance için:
+
+σ² = Σ(x - μ)² / N
+
+
+Sample Variance için:
+
+s² = Σ(x - x̄)² / (n - 1)
+
+
+Burada:
+
+x = Her bir veri değeri
+
+μ = Population Mean
+
+x̄ = Sample Mean
+
+N = Population içindeki veri sayısı
+
+n = Sample içindeki veri sayısı
+
+σ² = Population Variance
+
+s² = Sample Variance
+
+
+BASİT ÖRNEK
+
+Veri seti:
+
+2, 4, 6
+
+
+1. Adım: Mean değerini buluruz.
+
+Mean = (2 + 4 + 6) / 3
+
+Mean = 12 / 3
+
+Mean = 4
+
+
+2. Adım: Her sayının Mean değerinden farkını buluruz.
+
+2 - 4 = -2
+
+4 - 4 = 0
+
+6 - 4 = 2
+
+
+3. Adım: Farkların karesini buluruz.
+
+(-2)² = 4
+
+(0)² = 0
+
+(2)² = 4
+
+
+4. Adım: Hepsini toplarız.
+
+4 + 0 + 4 = 8
+
+
+5. Adım: Variance değerini buluruz.
+
+Bu veri setini Population olarak kabul edersek:
+
+Variance = 8 / 3
+
+Variance = 2.67
+
+
+CEVAP
+
+Variance = 2.67
+
+
+Yani bu veri setinin Variance değeri 2.67'dir.
+
+
+ÖNEMLİ NOKTA
+
+Variance küçükse:
+
+Sayılar birbirine daha yakındır.
+
+Dağılım daha azdır.
+
+
+Variance büyükse:
+
+Sayılar birbirinden daha uzaktır.
+
+Dağılım daha fazladır.
+
+
+
+STANDARD DEVIATION
+
+
+Standard Deviation, verilerdeki sayıların ortalama değerden ne kadar uzak veya yakın olduğunu gösteren bir ölçüdür.
+
+Basitçe:
+
+Sayılar ortalamaya yakınsa Standard Deviation küçüktür.
+
+Sayılar ortalamadan uzaksa Standard Deviation büyüktür.
+
+
+VARIANCE İLE STANDARD DEVIATION ARASINDAKİ İLİŞKİ
+
+Standard Deviation, Variance değerinin kareköküdür.
+
+
+FORMÜL
+
+Standard Deviation = √Variance
+
+
+POPULATION İÇİN
+
+σ = √[Σ(x - μ)² / N]
+
+
+SAMPLE İÇİN
+
+s = √[Σ(x - x̄)² / (n - 1)]
+
+
+FORMÜLDEKİ SEMBOLLER
+
+σ = Population Standard Deviation
+
+s = Sample Standard Deviation
+
+x = Her bir veri değeri
+
+μ = Population Mean
+
+x̄ = Sample Mean
+
+N = Population içindeki veri sayısı
+
+n = Sample içindeki veri sayısı
+
+
+ÖRNEK
+
+Veri seti:
+
+2, 4, 6
+
+
+Bu veri setini Population olarak kabul edelim.
+
+
+1. Adım: Mean değerini buluruz.
+
+Mean = (2 + 4 + 6) / 3
+
+Mean = 12 / 3
+
+Mean = 4
+
+
+2. Adım: Her sayının Mean değerinden farkını buluruz.
+
+2 - 4 = -2
+
+4 - 4 = 0
+
+6 - 4 = 2
+
+
+3. Adım: Farkların karesini buluruz.
+
+(-2)² = 4
+
+(0)² = 0
+
+(2)² = 4
+
+
+4. Adım: Variance değerini buluruz.
+
+Variance = (4 + 0 + 4) / 3
+
+Variance = 8 / 3
+
+Variance = 2.67
+
+
+5. Adım: Standard Deviation değerini buluruz.
+
+Standard Deviation = √2.67
+
+Standard Deviation ≈ 1.63
+
+
+CEVAP
+
+Standard Deviation ≈ 1.63
+
+
+Yani bu veri setinin ortalaması 4'tür ve sayılar ortalamanın etrafında yaklaşık 1.63 birimlik bir yayılım göstermektedir.
+
+
+HATIRLAMANIN KOLAY YOLU
+
+Önce Mean değerini buluruz.
+
+Her sayının Mean değerinden farkını buluruz.
+
+Farkların karesini buluruz.
+
+Variance değerini buluruz.
+
+Variance değerinin karekökünü alırız.
+
+Elde edilen sonuç Standard Deviation olur.
+
+
+ÖNEMLİ NOKTA
+
+Standard Deviation küçükse:
+
+Sayılar Mean değerine yakındır.
+
+Dağılım azdır.
+
+
+Standard Deviation büyükse:
+
+Sayılar Mean değerinden uzaktır.
+
+Dağılım fazladır.
+
+
+EN ÖNEMLİ NOKTA
+
+Variance → Dağılımın kare cinsinden ölçüsüdür.
+
+Standard Deviation → Variance değerinin kareköküdür.
+
+
+Standard Deviation'ın birimi, orijinal veri birimiyle aynıdır.
+
+Örneğin:
+
+Verilerin birimi cm ise, Standard Deviation'ın birimi de cm olur.
+
+
+
+EMPIRICAL RULE
+
+
+Empirical Rule, normal dağılıma yakın olan verilerde verilerin yüzde kaçının ortalama değerin çevresinde bulunduğunu gösteren bir kuraldır.
+
+Basitçe:
+
+Veriler normal dağılıma yakınsa, sayıların çoğu Mean değerinin çevresinde toplanır.
+
+
+1 STANDARD DEVIATION
+
+Verilerin yaklaşık %68'i Mean değerinin bir Standard Deviation çevresindedir.
+
+
+FORMÜL
+
+68% = μ ± σ
+
+
+2 STANDARD DEVIATIONS
+
+Verilerin yaklaşık %95'i Mean değerinin iki Standard Deviation çevresindedir.
+
+
+FORMÜL
+
+95% = μ ± 2σ
+
+
+3 STANDARD DEVIATIONS
+
+Verilerin yaklaşık %99.7'si Mean değerinin üç Standard Deviation çevresindedir.
+
+
+FORMÜL
+
+99.7% = μ ± 3σ
+
+
+FORMÜLDEKİ SEMBOLLER
+
+μ = Mean
+
+σ = Standard Deviation
+
+
+ÖRNEK
+
+Bir sınıftaki sınav notlarının normal dağılıma yakın olduğunu düşünelim.
+
+
+Mean:
+
+μ = 70
+
+
+Standard Deviation:
+
+σ = 10
+
+
+1. Adım: Bir Standard Deviation
+
+
+Alt sınır:
+
+μ - σ = 70 - 10 = 60
+
+
+Üst sınır:
+
+μ + σ = 70 + 10 = 80
+
+
+Buna göre 60 ile 80 arasındaki notların yaklaşık %68'i bu aralıkta bulunur.
+
+
+2. Adım: İki Standard Deviations
+
+
+Alt sınır:
+
+μ - 2σ = 70 - 20 = 50
+
+
+Üst sınır:
+
+μ + 2σ = 70 + 20 = 90
+
+
+Buna göre 50 ile 90 arasındaki notların yaklaşık %95'i bu aralıkta bulunur.
+
+
+3. Adım: Üç Standard Deviations
+
+
+Alt sınır:
+
+μ - 3σ = 70 - 30 = 40
+
+
+Üst sınır:
+
+μ + 3σ = 70 + 30 = 100
+
+
+Buna göre 40 ile 100 arasındaki notların yaklaşık %99.7'si bu aralıkta bulunur.
+
+
+HATIRLAMANIN EN KOLAY YOLU
+
+68% = 1σ
+
+95% = 2σ
+
+99.7% = 3σ
+
+
+Yani:
+
+68% - 95% - 99.7%
+
+
+Bu üç sayıyı hatırlarsanız Empirical Rule'u kolayca hatırlayabilirsiniz.
+
+
+ÖNEMLİ NOT
+
+Empirical Rule yalnızca normal dağılıma yakın olan veri setlerinde kullanılır.
+
+Veriler normal dağılıma yakın değilse 68%, 95% ve 99.7% kuralı kullanılmamalıdır.
+
+
+KISA ÖZET
+
+1 Standard Deviation → 68%
+
+2 Standard Deviations → 95%
+
+3 Standard Deviations → 99.7%
+
+
+Empirical Rule için en önemli nokta:
+
+68% - 95% - 99.7%
+
+
+
+PERCENTILE
+
+
+Percentile, bir veri setinde belirli bir değerin altında veya o değere eşit olan verilerin yüzdesini gösterir.
+
+Basitçe:
+
+Percentile, bir değerin diğer verilere göre veri setinde hangi konumda olduğunu gösterir.
+
+
+BASİT AÇIKLAMA
+
+Bir öğrencinin sınav notu 90th Percentile'da ise:
+
+Bu öğrencinin notundan düşük veya bu nota eşit olan notlar yaklaşık %90'dır.
+
+Yani bu öğrenci diğer öğrencilerin yaklaşık %90'ından daha yüksek bir not almıştır.
+
+
+FORMÜL
+
+Percentile konumunu bulmak için:
+
+P = (k / 100) × (n + 1)
+
+
+Burada:
+
+P = Percentile konumu
+
+k = Aranan Percentile değeri
+
+n = Veri sayısı
+
+
+ÖRNEK
+
+Aşağıdaki sınav notlarını düşünelim:
+
+10, 20, 30, 40, 50, 60, 70, 80, 90
+
+
+Bu sayılar zaten küçükten büyüğe sıralanmıştır.
+
+
+Veri sayısı:
+
+n = 9
+
+
+75th Percentile değerini bulmak istiyoruz.
+
+
+1. Adım
+
+P = (k / 100) × (n + 1)
+
+P = (75 / 100) × (9 + 1)
+
+P = 0.75 × 10
+
+P = 7.5
+
+
+2. Adım
+
+7.5 değeri 7. ve 8. sıradaki değerler arasındaki konumu gösterir.
+
+
+7. sıradaki değer:
+
+70
+
+
+8. sıradaki değer:
+
+80
+
+
+7.5. sıradaki değer:
+
+75
+
+
+Bu nedenle:
+
+75th Percentile = 75
+
+
+CEVAP
+
+75th Percentile = 75
+
+
+Yani bu veri setinin yaklaşık %75'i 75 veya daha düşük değerdedir.
+
+
+QUARTILE İLE PERCENTILE ARASINDAKİ İLİŞKİ
+
+Q1 = 25th Percentile
+
+Q2 = 50th Percentile
+
+Q3 = 75th Percentile
+
+
+Q2, Median ile aynıdır.
+
+
+HATIRLAMANIN KOLAY YOLU
+
+25th Percentile → 25%
+
+50th Percentile → 50%
+
+75th Percentile → 75%
+
+90th Percentile → 90%
+
+
+Percentile değeri büyüdükçe, veri setindeki konum da yükselir.
+
+
+ÖNEMLİ NOT
+
+Percentile ile Percentage aynı şey değildir.
+
+Percentage, bir sayının bütüne oranını gösterir.
+
+Percentile ise belirli bir değerin veri setindeki konumunu gösterir.
