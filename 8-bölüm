@@ -1,0 +1,465 @@
+8. DERS
+
+OLASILIK
+
+# Probability - Olasılık
+
+## 1. Probability nedir?
+
+Olasılık, bir olayın gerçekleşme ihtimalini gösterir.
+
+Basitçe:
+
+Probability = Bir olayın gerçekleşme şansı
+
+Örneğin:
+
+Bir parayı havaya attığımızda iki farklı sonuç olabilir:
+
+Head = Yazı
+Tail = Tura
+
+Para adil ise, Head gelme olasılığı:
+
+Probability = 1 / 2 = 0.5 = 50%
+
+Yani, parayı bir kez attığımızda Head gelme olasılığı %50'dir.
+
+---
+
+## 2. Probability'nin değeri
+
+Probability her zaman:
+
+0 ile 1 arasında olur.
+
+Yani:
+
+0 <= Probability <= 1
+
+Yüzde olarak:
+
+0% <= Probability <= 100%
+
+Anlamı:
+
+Probability = 0
+
+Bu olayın gerçekleşmesi mümkün değildir.
+
+Örnek:
+
+6 yüzlü bir dice'da 7 gelmesi
+
+Probability = 0
+
+---
+
+Probability = 1
+
+Bu olayın kesinlikle gerçekleşeceği anlamına gelir.
+
+Örnek:
+
+6 yüzlü bir dice'da 1 ile 6 arasındaki sayılardan birinin gelmesi
+
+Probability = 1 = 100%
+
+---
+
+## 3. Probability'nin temel formülü
+
+Eğer bütün sonuçların gerçekleşme ihtimali eşitse:
+
+Probability = Favorable Outcomes / Total Outcomes
+
+Burada:
+
+Favorable Outcomes = İstediğimiz sonuçların sayısı
+
+Total Outcomes = Tüm mümkün sonuçların sayısı
+
+## 4. Dice ile örnek
+
+Bir dice'ın 6 yüzü vardır.
+
+1, 2, 3, 4, 5, 6
+
+Şimdi:
+
+6 gelme olasılığını bulalım.
+
+İstediğimiz sonuç:
+
+Favorable Outcomes = 1
+
+Tüm sonuçlar:
+
+Total Outcomes = 6
+
+Bu nedenle:
+
+Probability = 1 / 6
+
+Yani:
+
+Probability = 16.67%
+
+Demek ki, dice attığımızda 6 gelme olasılığı yaklaşık %16.67'dir.
+
+## 5. Birden fazla uygun sonuç varsa
+
+Örneğin, bir dice attığımızda çift sayı gelme olasılığını bulalım.
+
+Dice:
+
+1, 2, 3, 4, 5, 6
+
+Çift sayılar:
+
+2, 4, 6
+
+Bu nedenle:
+
+Favorable Outcomes = 3
+
+Total Outcomes = 6
+
+Formül:
+
+Probability = 3 / 6
+
+Sadeleştirirsek:
+
+Probability = 1 / 2
+
+Yüzde olarak:
+
+Probability = 50%
+
+Yani, bir dice attığımızda çift sayı gelme olasılığı %50'dir.
+
+---
+
+## 6. Probability'yi günlük hayatta anlamak
+
+Örneğin hava durumu uygulamasında:
+
+Rain Probability = 70%
+
+gördük.
+
+Bu:
+
+"Kesinlikle yağmur yağacak."
+
+anlamına gelmez.
+
+Bunun anlamı:
+
+"Yağmur yağma ihtimali yüksektir."
+
+demektir.
+
+---
+
+## 7. Başka bir basit örnek
+
+Bir torbada:
+
+8 kırmızı top
+
+2 mavi top
+
+vardır.
+
+Toplam:
+
+10 top
+
+vardır.
+
+Bir topu rastgele seçersek, mavi top gelme olasılığı:
+
+Favorable Outcomes = 2
+
+Total Outcomes = 10
+
+Bu nedenle:
+
+Probability = 2 / 10
+
+Probability = 0.2
+
+Probability = 20%
+
+Yani, mavi top gelme olasılığı %20'dir.
+
+## 8. Probability'yi hatırlamanın en kolay yolu
+
+Probability = İstediğimiz sonuç / Tüm sonuçlar
+
+Yani:
+
+Probability = Favorable Outcomes / Total Outcomes
+
+Olasılığı hesaplarken şu üç soruyu sorun:
+
+1. Hangi sonucu istiyorum?
+
+2. İstediğim sonuç kaç tane?
+
+3. Toplam kaç farklı sonuç var?
+
+Sonra:
+
+Probability = Favorable Outcomes / Total Outcomes
+
+---
+
+## 9. Kısa özet
+
+Probability = Olasılık
+
+Olasılık, bir olayın gerçekleşme şansını gösterir.
+
+Probability = 0
+-> Mümkün değil
+
+Probability = 0.5
+-> %50 olasılık
+
+Probability = 1
+-> Kesinlikle gerçekleşir
+
+Temel formül:
+
+Probability = Favorable Outcomes / Total Outcomes
+
+Örneğin:
+
+Dice'da 6 gelmesi:
+
+Probability = 1 / 6 = 16.67%
+
+Dice'da çift sayı gelmesi:
+
+Probability = 3 / 6 = 1 / 2 = 50%
+
+==================================================
+
+## Olasılığın 4 Temel Türü
+
+Olasılık dört temel türe ayrılabilir:
+
+### 1. Klasik Olasılık
+
+Klasik olasılık, tüm mümkün sonuçlara göre hesaplanan standart olasılık yöntemidir.
+
+Örnekler:
+
+Para atma
+
+Zar atma
+
+Örneğin, adil bir paranın Head gelme olasılığı:
+
+Probability = 1 / 2 = 50%
+
+---
+
+### 2. Deneysel Olasılık
+
+Deneysel olasılık, yapılan deneylerde gözlemlenen sonuçlara göre hesaplanır.
+
+Bazı sonuçların ne kadar sık gerçekleştiğini deney yaparak öğreniriz.
+
+Örnek:
+
+Bir parayı birçok kez tekrar tekrar atmak.
+
+Örneğin:
+
+Bir para 100 kez atılıyor.
+
+Head 58 kez geliyor.
+
+Deneysel olasılık:
+
+Experimental Probability = 58 / 100
+
+Experimental Probability = 0.58
+
+Experimental Probability = 58%
+
+---
+
+### 3. Koşullu Olasılık
+
+Koşullu olasılık, B olayı gerçekleştiğinde A olayının gerçekleşme olasılığını gösterir.
+
+Yani:
+
+B gerçekleştiğinde A'nın gerçekleşme olasılığı
+
+Örnek:
+
+Bir kart seçtikten sonra seçilen kartın kırmızı bir papaz olma olasılığı.
+
+Koşullu olasılıkta, elimizdeki bilgiye göre olasılığı yeniden değerlendiririz.
+
+---
+
+### 4. Öznel Olasılık
+
+Öznel olasılık, kişisel görüşlere, deneyimlere ve uzman değerlendirmelerine dayanır.
+
+Bu tür olasılık doğrudan matematiksel hesaplamalara dayanmayabilir.
+
+Örneğin:
+
+Bir işletme yöneticisinin ekonomik duruma bakarak başka bir şirketle ortaklık yapma ihtimalini değerlendirmesi.
+
+Başka bir örnek:
+
+Ekonomik göstergelere bakarak gelecekte ekonominin büyüme ihtimalini tahmin etmek.
+
+==================================================
+
+# Olasılık Neden Önemlidir?
+
+## Temel prensip
+
+Probability = İstatistiğin dili
+
+Olasılık, istatistiğin temel taşlarından biridir.
+
+Çünkü istatistikte verileri anlamak, belirsizliği değerlendirmek ve doğru kararlar vermek için olasılığa ihtiyaç vardır.
+
+---
+
+## Olasılık olmadan ne olur?
+
+Olasılık ve istatistik arasındaki temel ilişkiyi şöyle düşünebiliriz:
+
+Probability
+->
+Distribution
+->
+Inference
+->
+Decision
+
+Türkçe olarak:
+
+Olasılık
+->
+Dağılım
+->
+Çıkarım
+->
+Karar
+
+==================================================
+
+# Probability ve Statistics arasındaki ilişki
+
+## 1. Probability
+
+Probability:
+
+Teoriden -> Gerçeğe
+
+Genel toplumu (Population) biliyoruz ve örneklemden (Sample) ne bekleyeceğimizi tahmin ediyoruz.
+
+Örnek:
+
+Bir para adil ise, 100 kez attığımızda yaklaşık kaç kez Head geleceğini tahmin edebiliriz.
+
+Yani:
+
+Population / Genel durum
+->
+Sample / Örneklem
+->
+Tahmin
+
+---
+
+## 2. Statistics
+
+Statistics:
+
+Gerçekten -> Teoriye
+
+Örneklemi (Sample) biliyoruz ve genel toplumu (Population) tahmin ediyoruz.
+
+Örnek:
+
+Bir parayı 100 kez attık ve 58 kez Head geldi.
+
+Şimdi şu soruyu sorabiliriz:
+
+"Bu para adil mi?"
+
+Yani:
+
+Sample / Örneklem
+->
+Population / Genel toplum
+->
+Tahmin
+
+==================================================
+
+# Kısa Karşılaştırma
+
+Probability:
+
+Genelden -> Örneğe
+
+Population -> Sample
+
+Örnek:
+
+Para adil olduğunu biliyoruz.
+100 atışta kaç kez Head geleceğini tahmin ediyoruz.
+
+Statistics:
+
+Örnekten -> Genele
+
+Sample -> Population
+
+Örnek:
+
+100 atış yaptık ve 58 kez Head geldi.
+Paranın adil olup olmadığını tahmin ediyoruz.
+
+==================================================
+
+# Sonuç
+
+Probability ve Statistics birbirleriyle çok yakından ilişkilidir.
+
+Probability bize:
+
+"Genel durum biliniyorsa, örneklemde ne olmasını bekleriz?"
+
+sorusunun cevabını verir.
+
+Statistics ise:
+
+"Örneklemde gördüğümüz sonuçlara bakarak genel durum hakkında ne söyleyebiliriz?"
+
+sorusunun cevabını verir.
+
+Bu nedenle:
+
+Probability = Olasılık
+
+Statistics = İstatistik
+
+Probability -> Distribution -> Inference -> Decision
+
+Olasılık -> Dağılım -> Çıkarım -> Karar
