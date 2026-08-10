@@ -1,0 +1,966 @@
+
+بۇ يەردىكى مەسىلە Git commit دا ئەمەس، authentication (كىملىكنى دەلىللەش) مەسىلىسى.
+
+سىنىڭ git status نىڭدا:
+
+Your branch is ahead of 'origin/main' by 1 commit.
+دېگەن. يەنى commit مۇۋەپپەقىيەتلىك بولغان، پەقەت Git server غا push قىلالمايۋاتىسەن.
+
+Remote نىڭ ئادرىسى:
+
+https://uyhub.qutadguai.com/ayse/istatistika.git
+1-قەدەم: Remote نى تەكشۈرەيلى
+VS Code Terminal غا مۇشۇنى يېزىپ Enter باس:
+
+git remote -v
+ئاندىن چىققان نەتىجىنى ماڭا ئەۋەت.
+
+ھازىرچە git push نى قايتا-قايتا قىلما. ئالدى بىلەن remote ۋە authentication نى تەكشۈرۈپ، ئاندىن توغرا login ئۇسۇلى بىلەن push قىلىمىز.
+
+
+PS C:\Users\dell\Downloads\istatistika> git remote -v
+
+origin https://uyhub.qutadguai.com/ayse/istatistika.git (fetch)
+
+origin https://uyhub.qutadguai.com/ayse/istatistika.git (push)
+
+PS C:\Users\dell\Downloads\istatistika>
+
+
+ھەئە، بۇ نەتىجە remote ئادرېسى توغرا ئىكەنلىكىنى كۆرسىتىدۇ. مەسىلە push قىلغاندا server سىنىڭ كىملىكىڭنى دەلىللىيەلمەيۋاتىدۇ.
+
+سەندە ھازىر 1 دانە commit push قىلىشنى كۈتۈپ تۇرىدۇ:
+
+Your branch is ahead of 'origin/main' by 1 commit.
+ھازىر مۇشۇنى قىلىپ باق
+PowerShell غا:
+
+git config --global credential.helper manager
+ئاندىن:
+
+git push origin main
+ئەگەر login كۆزنىكى چىقسا، uyhub.qutadguai.com دىكى username ۋە password/token بىلەن كىرىش كېرەك.
+
+ئەگەر يەنە مۇشۇ چىقسا
+remote: Failed to authenticate user
+fatal: Authentication failed
+ئۇنداقتا Windows دا كونا password ساقلىنىپ قالغان بولۇشى مۇمكىن. ئۇنى ئۆچۈرۈپ قايتا login قىلدۇرىمىز.
+
+ئالدى بىلەن يۇقىرىدىكى ئىككى بۇيرۇقنى ئىجرا قىل. نەتىجىسىنى بۇ يەرگە چاپلا، كېيىنكى قەدەمنى بىر-بىرلەپ ئېيتىپ بېرىمەن.
+
+
+
+Yapıştırılan markdown.md
+Dosya
+بۇ خەتلەنى ئۆلچەملىك ھالدا تۈركچىگە تەرجىمە قىلىپ بەر .مەن بۇنى vskodقا چاپلايمەن ،خەتلىرى بۇزۇلمايدىغان بولسۇن
+
+ئەلبەت. ئەسلىدىكى مەزمۇننى ئۆلچەملىك تۈركچە قىلىپ، Markdown شەكلىنى ساقلاپ، VS Code دا UTF-8 بىلەن ئېچىلغاندا خەتلەر بۇزۇلمايدىغان قىلىپ تەييارلىدىم. ئەسلى ھۆججەتتىكى 9-دەرسنىڭ مەزمۇنىنى ئاساس قىلدىم. 
+
+
+📄 VS Code غا بىۋاسىتە چاپلاش ياكى .md ھۆججىتى قىلىپ ئىشلىتىش ئۈچۈن:
+
+9-ders_Olasilik_Dagilimlari_Turkce.md ھۆججىتىنى ئېلىش
+
+مۇھىم: VS Code دا ھۆججەتنى UTF-8 encoding بىلەن ساقلىسىڭىز، ş, ğ, ü, ö, ç, ı, İ قاتارلىق تۈركچە ھەرپلەر نورمال كۆرۈنىدۇ. 
+
+
+9-ders_Olasilik_Dagilimlari_Turkce.md
+Belge
+
+
+Kitaplık
+/
+9-ders_Olasilik_Dagilimlari_Turkce.md
+
+
+9 - Ders: Olasılık Dağılımları
+Temel İlke
+Gerçek dünyadaki veriler rastgele değildir; belirli bir biçimde dağılır.
+
+Önceki dersin devamı: Olasılık ← Dağılım ← Çıkarım
+
+Dağılım ile neler yapabiliriz?
+Tahmin: Yüzde kaç öğrenci sınavı geçer?
+
+Risk değerlendirmesi: Bu yıl kaç kez yağmur yağacak?
+
+Kalite kontrolü: 10.000 üründen kaçı kusurlu?
+
+Karar verme: Bu ilaç güvenilir mi?
+
+Dağılımların iki büyük türü
+Kesikli (Discrete): Sayılabilen değerler.
+
+Örnek: Öğrenci sayısı, telefon sayısı.
+
+Sürekli (Continuous): Ölçülebilen değerler.
+
+Örnek: Boy, ağırlık, zaman.
+
+En önemli nokta: Doğru dağılımı seçmek, doğru çıkarım yapmanın temelidir.
+
+Rastgele Değişken
+Bir deneyin sonucuna sayısal bir değer veren değişkendir.
+
+Örnek 1: Bir parayı 10 kez attığımızda tura sayısının sonucu rastgele değişken olur. Olası tura sayısı 0 ile 10 arasındadır. Veri türü kesiklidir.
+
+Örnek 2: Bir kişinin boy uzunluğunun değişmesi durumunda rastgele değişken boy uzunluğudur. Veri türü süreklidir.
+
+İki tür rastgele değişken
+Kesikli rastgele değişken: Sayılabilen değerler.
+
+Örnek: Çocuk sayısı = 0, 1, 2, 3, ...
+
+Olasılık:
+
+P(X = x)
+
+Sürekli rastgele değişken: Ölçülebilen değerler.
+
+Örnek: Boy uzunluğu = 170.5, 170.51, 170.512, ...
+
+Önemli fark
+Kesikli
+P(X = x) anlamlıdır.
+
+Örneğin:
+
+P(X = 3) = 0.2
+
+Sürekli
+P(X = x) anlamlı değildir.
+
+Her zaman yalnızca:
+
+P(a ≤ X ≤ b)
+
+anlamlıdır.
+
+Not: Dağılım = Rastgele değişkenin tüm mümkün değerleri ve bu değerlerin olasılıkları.
+
+Dört Önemli Dağılım (Four Key Distributions)
+Normal (Normal Dağılım)
+En sık karşılaşılan dağılımlardan biridir. Ortada daha fazla, iki uçta daha az değer bulunur.
+
+Uniform (Düzgün Dağılım)
+Tüm sonuçların gerçekleşme olasılığı eşittir.
+
+Poisson (Poisson Dağılımı)
+Belirli bir zaman veya bölgede bir olayın kaç kez gerçekleştiğini ifade eder.
+
+Binomial (Binom Dağılımı)
+n denemede, her denemenin iki sonucu olduğu durumda başarı sayısını gösterir.
+
+Dağılım Seçme Karar Süreci
+1. Soru: Veri türü nedir?
+
+Kesikli (sayılabilir) → 2. soruya geçilir.
+
+Sürekli (ölçülebilir) → Normal veya Uniform
+
+2. Soru: Olayın yapısı nedir?
+
+Binomial veya Poisson
+
+En önemlisi: Her soru için doğru dağılımı seçmek, problemi çözmenin temelidir.
+
+Binomial Distribution (Binom Dağılımı)
+Binom dağılımı nedir?
+Birbirinden bağımsız n deneme içinde başarının kaç kez gerçekleştiğini hesaplamak için kullanılan bir olasılık dağılımıdır.
+
+Kullanılabilmesi için 4 şartın olması gerekir:
+
+Deneme sayısı (n) önceden belirlenmiş olmalıdır.
+
+Her denemenin yalnızca iki sonucu olmalıdır:
+
+Başarı (Success)
+
+Başarısızlık (Failure)
+
+Her denemede başarı olasılığı (p) değişmemelidir.
+
+Denemeler birbirinden bağımsız olmalıdır.
+
+Formül
+P(X = x) = C(n,x) × p^x × (1-p)^(n-x)
+
+Binomial ne zaman kullanılır?
+Para atma
+
+Zar atıldığında başarı sayısı
+
+Sınavda doğru cevap sayısı
+
+Fabrikada kaliteli ürün sayısı
+
+Müşterinin satın alıp almaması
+
+Bir ilacın tedavide etkili olup olmaması
+
+Poisson Distribution (Poisson Dağılımı)
+Poisson dağılımı nedir?
+Belirli bir zaman, aralık veya bölge içinde bir olayın kaç kez gerçekleştiğini hesaplamak için kullanılan bir olasılık dağılımıdır.
+
+Örnekler:
+Bir saatte kaç telefon gelir?
+
+Bir günde kaç müşteri gelir?
+
+Bir kitap sayfasında kaç yazım hatası vardır?
+
+Bir kilometrelik yolda kaç trafik kazası meydana gelir?
+
+Bunların hepsi Poisson Distribution kapsamına girer.
+
+Poisson kullanma şartları
+Olaylar belirli bir zaman veya bölge içinde sayılır.
+
+Olaylar bağımsız olarak gerçekleşir.
+
+Ortalama gerçekleşme sayısı (λ) değişmez.
+
+Aynı anda iki olayın gerçekleşme olasılığı çok küçüktür.
+
+Formül
+P(X = x) = (e^(-λ) × λ^x) / x!
+
+veya:
+
+P(X = x) = (e⁻ˡ × λˣ) / x!
+
+Poisson ne zaman kullanılır?
+Bir saatte gelen telefon sayısı
+
+Bir günde gelen müşteri sayısı
+
+Bir sayfadaki yazım hataları
+
+Yoldaki trafik kazaları
+
+Bir dakikada gelen e-postalar
+
+Bir hastaneye gelen hastalar
+
+Sınavda tanımanın kolay yolu
+Soruda aşağıdaki ifadeleri görürseniz genellikle Poisson Distribution kullanılır:
+
+Her saatte
+
+Her gün
+
+Her dakikada
+
+Ortalama (Average/Mean)
+
+Kaç olay gerçekleşir?
+
+Belirli bir zaman veya bölge
+
+Kısaca hatırlama
+Binomial = Sabit deneme sayısı (n) + iki sonuç
+
+Poisson = Sabit zaman veya bölge + olay sayısı (λ)
+
+Uniform Distribution (Düzgün Dağılım)
+Uniform Distribution nedir?
+Tüm sonuçların gerçekleşme olasılığının eşit olduğu dağılımdır.
+
+Yani hiçbir sonuç diğerinden daha yüksek veya daha düşük olasılığa sahip değildir.
+
+Uniform Distribution'ın iki türü
+1. Discrete Uniform Distribution (Kesikli Düzgün Dağılım)
+Sayılabilen, ayrı ayrı değerler vardır.
+
+Örnek: Zar, kart, piyango numarası.
+
+2. Continuous Uniform Distribution (Sürekli Düzgün Dağılım)
+İki sayı arasındaki herhangi bir değer eşit olasılığa sahiptir.
+
+Örnek: Zaman, uzunluk, ağırlık.
+
+1. Discrete Uniform Distribution formülü
+Eğer toplam n tane eşit olasılıklı sonuç varsa:
+
+P(X = x) = 1 / n
+
+veya:
+
+P(X = x) = 1 / n
+
+Uniform Distribution ne zaman kullanılır?
+Adil bir zar atma
+
+Adil bir para atma (Head ve Tail her biri %50)
+
+Piyango numarası
+
+Kart seçimi
+
+Bir zaman aralığında rastgele seçilen herhangi bir zaman
+
+Bir uzunluk veya mesafe üzerindeki rastgele herhangi bir nokta
+
+Hatırlaması kolay cümle
+Eğer tüm sonuçların gerçekleşme olasılığı eşitse, Uniform Distribution kullanılır.
+
+Sınavda tanımanın kolay yolu
+Soruda aşağıdaki ifadeleri görürseniz çoğunlukla Uniform Distribution kullanılır:
+
+Eşit olasılık (Equal Probability)
+
+Adil (Fair)
+
+Herhangi bir zaman
+
+Herhangi bir konum
+
+Her sonuç aynı şansa sahiptir
+
+Kısaca hatırlama
+Binomial → Sabit deneme sayısı + iki sonuç
+
+Poisson → Sabit zaman veya bölge + olay sayısı
+
+Uniform → Tüm sonuçların olasılığı eşittir
+
+Normal → Ortadaki değerler daha fazla, uçlardaki değerler daha azdır
+
+Normal Distribution (Normal Dağılım)
+Normal Distribution nedir?
+Normal Distribution (Normal Dağılım) istatistikte en çok kullanılan dağılımlardan biridir. Ortadaki değerler daha fazla, uç değerler ise giderek daha az görülür.
+
+Şekli çan (Bell Shape) biçiminde olduğu için Bell Curve olarak da adlandırılır.
+
+Normal Distribution'ın özellikleri
+Eğri simetriktir (Symmetric).
+
+Ortadaki değer Mean (μ) değeridir.
+
+Mean, Median ve Mode birbirine eşittir.
+
+Ortalamaya yakın sayılar en fazla, uçlardaki sayılar ise en az görülür.
+
+Formül
+f(x) = 1 / (σ√(2π)) × e^(-(x-μ)^2 / (2σ^2))
+
+Normal Distribution ne zaman kullanılır?
+İnsanların boy uzunluğu
+
+Ağırlık
+
+Kan basıncı
+
+IQ puanı
+
+Sınav sonuçları
+
+Fabrika ürünlerinin ölçüleri
+
+Doğal olarak ortaya çıkan birçok veri
+
+Hatırlaması kolay cümle
+Eğer veriler ortadaki değer etrafında toplanıyor ve uçlara doğru giderek azalıyorsa, Normal Distribution kullanılır.
+
+En kolay hatırlama yöntemi
+Binomial → “Kaç kez başarı oldu?”
+
+Poisson → “Belirli bir zamanda kaç olay oldu?”
+
+Uniform → “Hepsinin olasılığı eşit.”
+
+Normal → “Çoğu ortada, azı uçlarda.”
+
+68 – 95 – 99.7 Kuralı
+Normal Distribution'da en önemli kurallardan biri:
+
+Aralık	Verilerin oranı
+μ ± 1σ	%68
+μ ± 2σ	%95
+μ ± 3σ	%99.7
+Bu kurala Empirical Rule adı verilir.
+
+Z-Score (Standart Skor)
+Z-Score nedir?
+Bir değerin ortalama değerden kaç standart sapma uzakta veya yakın olduğunu gösterir.
+
+Başka bir ifadeyle:
+
+Z-Score bize bir değerin ortalama değerden ne kadar yüksek veya düşük olduğunu söyler.
+
+Z-Score formülü
+Z = (X − μ) / σ
+
+Z-Score'un anlamı
+Z-Score	Anlamı
+Z = 0	Değer tam olarak ortalama değere eşittir.
+Z > 0	Değer ortalamadan yüksektir.
+Z < 0	Değer ortalamadan düşüktür.
+Örnek 1: Sınav puanı
+Bir sınavın:
+
+Ortalama puanı (μ) = 70
+
+Standart sapması (σ) = 5
+
+Ali'nin puanı (X) = 80
+
+1. Adım: Formülde yerine koyarız
+Z = (80 − 70) / 5
+
+2. Adım: Hesaplarız
+Z = 10 / 5 = 2
+
+Cevap
+Ali'nin puanı ortalamadan 2 standart sapma daha yüksektir.
+
+Örnek 2: Boy uzunluğu
+Öğrencilerin:
+
+Ortalama boyu = 170 cm
+
+Standart sapma = 10 cm
+
+Ahmet'in boyu = 160 cm
+
+Formül
+Z = (160 − 170) / 10
+
+Hesaplama
+Z = -10 / 10 = -1
+
+Cevap
+Ahmet'in boyu ortalamadan 1 standart sapma daha düşüktür.
+
+Örnek 3: Ağırlık
+Bir gruptaki insanların:
+
+Ortalama ağırlığı = 65 kg
+
+Standart sapma = 5 kg
+
+Bir kişinin ağırlığı = 75 kg
+
+Formül
+Z = (75 − 65) / 5
+
+Hesaplama
+Z = 2
+
+Cevap
+Bu kişinin ağırlığı ortalamadan 2 standart sapma daha yüksektir.
+
+Z-Score'u nasıl anlarız?
+Eğer:
+
+Z = 0 → Tam olarak ortalamadır.
+
+Z = 1 → Ortalamadan 1 σ daha yüksektir.
+
+Z = 2 → Ortalamadan 2 σ daha yüksektir.
+
+Z = -1 → Ortalamadan 1 σ daha düşüktür.
+
+Z = -2 → Ortalamadan 2 σ daha düşüktür.
+
+Z-Score ne zaman kullanılır?
+Sınav puanlarını karşılaştırırken
+
+Öğrencilerin boy uzunluklarını değerlendirirken
+
+Ağırlığı incelerken
+
+IQ puanlarını karşılaştırırken
+
+İstatistiksel analizlerde
+
+Basit açıklama
+Şöyle düşünün:
+
+Sınıftaki öğrencilerin ortalama puanı 70.
+
+Siz 70 alırsanız → Z = 0
+
+Siz 80 alırsanız → Z = 2
+
+Siz 65 alırsanız → Z = -1
+
+Yani Z-Score, sonucunuzun ortalamadan ne kadar uzakta olduğunu gösteren bir ölçüdür.
+
+Hatırlaması kolay cümle
+Z-Score = “Bu değer ortalamadan kaç standart sapma (σ) uzakta?” sorusunun cevabıdır.
+
+Sınavda tanımanın kolay yolu
+Soruda aşağıdaki bilgiler varsa genellikle Z-Score kullanılır:
+
+Ortalama (Mean, μ)
+
+Standart sapma (Standard Deviation, σ)
+
+Bir kişinin veya bir şeyin değeri (X)
+
+“Ortalamadan ne kadar yüksek veya düşük?” sorusu
+
+Kısaca hatırlama
+Formül:
+
+Z = (X − μ) / σ
+
+Eğer:
+
+Z > 0 → Ortalamadan yüksek
+
+Z = 0 → Ortalama ile aynı
+
+Z < 0 → Ortalamadan düşük
+
+Z-Score'un temel görevi: Bir değerin ortalama değerden ne kadar uzakta olduğunu ölçmektir.
+
+Kitaplık
+/
+9-ders_Olasilik_Dagilimlari_Turkce.md
+
+
+9 - Ders: Olasılık Dağılımları
+Temel İlke
+Gerçek dünyadaki veriler rastgele değildir; belirli bir biçimde dağılır.
+
+Önceki dersin devamı: Olasılık ← Dağılım ← Çıkarım
+
+Dağılım ile neler yapabiliriz?
+Tahmin: Yüzde kaç öğrenci sınavı geçer?
+
+Risk değerlendirmesi: Bu yıl kaç kez yağmur yağacak?
+
+Kalite kontrolü: 10.000 üründen kaçı kusurlu?
+
+Karar verme: Bu ilaç güvenilir mi?
+
+Dağılımların iki büyük türü
+Kesikli (Discrete): Sayılabilen değerler.
+
+Örnek: Öğrenci sayısı, telefon sayısı.
+
+Sürekli (Continuous): Ölçülebilen değerler.
+
+Örnek: Boy, ağırlık, zaman.
+
+En önemli nokta: Doğru dağılımı seçmek, doğru çıkarım yapmanın temelidir.
+
+Rastgele Değişken
+Bir deneyin sonucuna sayısal bir değer veren değişkendir.
+
+Örnek 1: Bir parayı 10 kez attığımızda tura sayısının sonucu rastgele değişken olur. Olası tura sayısı 0 ile 10 arasındadır. Veri türü kesiklidir.
+
+Örnek 2: Bir kişinin boy uzunluğunun değişmesi durumunda rastgele değişken boy uzunluğudur. Veri türü süreklidir.
+
+İki tür rastgele değişken
+Kesikli rastgele değişken: Sayılabilen değerler.
+
+Örnek: Çocuk sayısı = 0, 1, 2, 3, ...
+
+Olasılık:
+
+P(X = x)
+
+Sürekli rastgele değişken: Ölçülebilen değerler.
+
+Örnek: Boy uzunluğu = 170.5, 170.51, 170.512, ...
+
+Önemli fark
+Kesikli
+P(X = x) anlamlıdır.
+
+Örneğin:
+
+P(X = 3) = 0.2
+
+Sürekli
+P(X = x) anlamlı değildir.
+
+Her zaman yalnızca:
+
+P(a ≤ X ≤ b)
+
+anlamlıdır.
+
+Not: Dağılım = Rastgele değişkenin tüm mümkün değerleri ve bu değerlerin olasılıkları.
+
+Dört Önemli Dağılım (Four Key Distributions)
+Normal (Normal Dağılım)
+En sık karşılaşılan dağılımlardan biridir. Ortada daha fazla, iki uçta daha az değer bulunur.
+
+Uniform (Düzgün Dağılım)
+Tüm sonuçların gerçekleşme olasılığı eşittir.
+
+Poisson (Poisson Dağılımı)
+Belirli bir zaman veya bölgede bir olayın kaç kez gerçekleştiğini ifade eder.
+
+Binomial (Binom Dağılımı)
+n denemede, her denemenin iki sonucu olduğu durumda başarı sayısını gösterir.
+
+Dağılım Seçme Karar Süreci
+1. Soru: Veri türü nedir?
+
+Kesikli (sayılabilir) → 2. soruya geçilir.
+
+Sürekli (ölçülebilir) → Normal veya Uniform
+
+2. Soru: Olayın yapısı nedir?
+
+Binomial veya Poisson
+
+En önemlisi: Her soru için doğru dağılımı seçmek, problemi çözmenin temelidir.
+
+Binomial Distribution (Binom Dağılımı)
+Binom dağılımı nedir?
+Birbirinden bağımsız n deneme içinde başarının kaç kez gerçekleştiğini hesaplamak için kullanılan bir olasılık dağılımıdır.
+
+Kullanılabilmesi için 4 şartın olması gerekir:
+
+Deneme sayısı (n) önceden belirlenmiş olmalıdır.
+
+Her denemenin yalnızca iki sonucu olmalıdır:
+
+Başarı (Success)
+
+Başarısızlık (Failure)
+
+Her denemede başarı olasılığı (p) değişmemelidir.
+
+Denemeler birbirinden bağımsız olmalıdır.
+
+Formül
+P(X = x) = C(n,x) × p^x × (1-p)^(n-x)
+
+Binomial ne zaman kullanılır?
+Para atma
+
+Zar atıldığında başarı sayısı
+
+Sınavda doğru cevap sayısı
+
+Fabrikada kaliteli ürün sayısı
+
+Müşterinin satın alıp almaması
+
+Bir ilacın tedavide etkili olup olmaması
+
+Poisson Distribution (Poisson Dağılımı)
+Poisson dağılımı nedir?
+Belirli bir zaman, aralık veya bölge içinde bir olayın kaç kez gerçekleştiğini hesaplamak için kullanılan bir olasılık dağılımıdır.
+
+Örnekler:
+Bir saatte kaç telefon gelir?
+
+Bir günde kaç müşteri gelir?
+
+Bir kitap sayfasında kaç yazım hatası vardır?
+
+Bir kilometrelik yolda kaç trafik kazası meydana gelir?
+
+Bunların hepsi Poisson Distribution kapsamına girer.
+
+Poisson kullanma şartları
+Olaylar belirli bir zaman veya bölge içinde sayılır.
+
+Olaylar bağımsız olarak gerçekleşir.
+
+Ortalama gerçekleşme sayısı (λ) değişmez.
+
+Aynı anda iki olayın gerçekleşme olasılığı çok küçüktür.
+
+Formül
+P(X = x) = (e^(-λ) × λ^x) / x!
+
+veya:
+
+P(X = x) = (e⁻ˡ × λˣ) / x!
+
+Poisson ne zaman kullanılır?
+Bir saatte gelen telefon sayısı
+
+Bir günde gelen müşteri sayısı
+
+Bir sayfadaki yazım hataları
+
+Yoldaki trafik kazaları
+
+Bir dakikada gelen e-postalar
+
+Bir hastaneye gelen hastalar
+
+Sınavda tanımanın kolay yolu
+Soruda aşağıdaki ifadeleri görürseniz genellikle Poisson Distribution kullanılır:
+
+Her saatte
+
+Her gün
+
+Her dakikada
+
+Ortalama (Average/Mean)
+
+Kaç olay gerçekleşir?
+
+Belirli bir zaman veya bölge
+
+Kısaca hatırlama
+Binomial = Sabit deneme sayısı (n) + iki sonuç
+
+Poisson = Sabit zaman veya bölge + olay sayısı (λ)
+
+Uniform Distribution (Düzgün Dağılım)
+Uniform Distribution nedir?
+Tüm sonuçların gerçekleşme olasılığının eşit olduğu dağılımdır.
+
+Yani hiçbir sonuç diğerinden daha yüksek veya daha düşük olasılığa sahip değildir.
+
+Uniform Distribution'ın iki türü
+1. Discrete Uniform Distribution (Kesikli Düzgün Dağılım)
+Sayılabilen, ayrı ayrı değerler vardır.
+
+Örnek: Zar, kart, piyango numarası.
+
+2. Continuous Uniform Distribution (Sürekli Düzgün Dağılım)
+İki sayı arasındaki herhangi bir değer eşit olasılığa sahiptir.
+
+Örnek: Zaman, uzunluk, ağırlık.
+
+1. Discrete Uniform Distribution formülü
+Eğer toplam n tane eşit olasılıklı sonuç varsa:
+
+P(X = x) = 1 / n
+
+veya:
+
+P(X = x) = 1 / n
+
+Uniform Distribution ne zaman kullanılır?
+Adil bir zar atma
+
+Adil bir para atma (Head ve Tail her biri %50)
+
+Piyango numarası
+
+Kart seçimi
+
+Bir zaman aralığında rastgele seçilen herhangi bir zaman
+
+Bir uzunluk veya mesafe üzerindeki rastgele herhangi bir nokta
+
+Hatırlaması kolay cümle
+Eğer tüm sonuçların gerçekleşme olasılığı eşitse, Uniform Distribution kullanılır.
+
+Sınavda tanımanın kolay yolu
+Soruda aşağıdaki ifadeleri görürseniz çoğunlukla Uniform Distribution kullanılır:
+
+Eşit olasılık (Equal Probability)
+
+Adil (Fair)
+
+Herhangi bir zaman
+
+Herhangi bir konum
+
+Her sonuç aynı şansa sahiptir
+
+Kısaca hatırlama
+Binomial → Sabit deneme sayısı + iki sonuç
+
+Poisson → Sabit zaman veya bölge + olay sayısı
+
+Uniform → Tüm sonuçların olasılığı eşittir
+
+Normal → Ortadaki değerler daha fazla, uçlardaki değerler daha azdır
+
+Normal Distribution (Normal Dağılım)
+Normal Distribution nedir?
+Normal Distribution (Normal Dağılım) istatistikte en çok kullanılan dağılımlardan biridir. Ortadaki değerler daha fazla, uç değerler ise giderek daha az görülür.
+
+Şekli çan (Bell Shape) biçiminde olduğu için Bell Curve olarak da adlandırılır.
+
+Normal Distribution'ın özellikleri
+Eğri simetriktir (Symmetric).
+
+Ortadaki değer Mean (μ) değeridir.
+
+Mean, Median ve Mode birbirine eşittir.
+
+Ortalamaya yakın sayılar en fazla, uçlardaki sayılar ise en az görülür.
+
+Formül
+f(x) = 1 / (σ√(2π)) × e^(-(x-μ)^2 / (2σ^2))
+
+Normal Distribution ne zaman kullanılır?
+İnsanların boy uzunluğu
+
+Ağırlık
+
+Kan basıncı
+
+IQ puanı
+
+Sınav sonuçları
+
+Fabrika ürünlerinin ölçüleri
+
+Doğal olarak ortaya çıkan birçok veri
+
+Hatırlaması kolay cümle
+Eğer veriler ortadaki değer etrafında toplanıyor ve uçlara doğru giderek azalıyorsa, Normal Distribution kullanılır.
+
+En kolay hatırlama yöntemi
+Binomial → “Kaç kez başarı oldu?”
+
+Poisson → “Belirli bir zamanda kaç olay oldu?”
+
+Uniform → “Hepsinin olasılığı eşit.”
+
+Normal → “Çoğu ortada, azı uçlarda.”
+
+68 – 95 – 99.7 Kuralı
+Normal Distribution'da en önemli kurallardan biri:
+
+Aralık	Verilerin oranı
+μ ± 1σ	%68
+μ ± 2σ	%95
+μ ± 3σ	%99.7
+Bu kurala Empirical Rule adı verilir.
+
+Z-Score (Standart Skor)
+Z-Score nedir?
+Bir değerin ortalama değerden kaç standart sapma uzakta veya yakın olduğunu gösterir.
+
+Başka bir ifadeyle:
+
+Z-Score bize bir değerin ortalama değerden ne kadar yüksek veya düşük olduğunu söyler.
+
+Z-Score formülü
+Z = (X − μ) / σ
+
+Z-Score'un anlamı
+Z-Score	Anlamı
+Z = 0	Değer tam olarak ortalama değere eşittir.
+Z > 0	Değer ortalamadan yüksektir.
+Z < 0	Değer ortalamadan düşüktür.
+Örnek 1: Sınav puanı
+Bir sınavın:
+
+Ortalama puanı (μ) = 70
+
+Standart sapması (σ) = 5
+
+Ali'nin puanı (X) = 80
+
+1. Adım: Formülde yerine koyarız
+Z = (80 − 70) / 5
+
+2. Adım: Hesaplarız
+Z = 10 / 5 = 2
+
+Cevap
+Ali'nin puanı ortalamadan 2 standart sapma daha yüksektir.
+
+Örnek 2: Boy uzunluğu
+Öğrencilerin:
+
+Ortalama boyu = 170 cm
+
+Standart sapma = 10 cm
+
+Ahmet'in boyu = 160 cm
+
+Formül
+Z = (160 − 170) / 10
+
+Hesaplama
+Z = -10 / 10 = -1
+
+Cevap
+Ahmet'in boyu ortalamadan 1 standart sapma daha düşüktür.
+
+Örnek 3: Ağırlık
+Bir gruptaki insanların:
+
+Ortalama ağırlığı = 65 kg
+
+Standart sapma = 5 kg
+
+Bir kişinin ağırlığı = 75 kg
+
+Formül
+Z = (75 − 65) / 5
+
+Hesaplama
+Z = 2
+
+Cevap
+Bu kişinin ağırlığı ortalamadan 2 standart sapma daha yüksektir.
+
+Z-Score'u nasıl anlarız?
+Eğer:
+
+Z = 0 → Tam olarak ortalamadır.
+
+Z = 1 → Ortalamadan 1 σ daha yüksektir.
+
+Z = 2 → Ortalamadan 2 σ daha yüksektir.
+
+Z = -1 → Ortalamadan 1 σ daha düşüktür.
+
+Z = -2 → Ortalamadan 2 σ daha düşüktür.
+
+Z-Score ne zaman kullanılır?
+Sınav puanlarını karşılaştırırken
+
+Öğrencilerin boy uzunluklarını değerlendirirken
+
+Ağırlığı incelerken
+
+IQ puanlarını karşılaştırırken
+
+İstatistiksel analizlerde
+
+Basit açıklama
+Şöyle düşünün:
+
+Sınıftaki öğrencilerin ortalama puanı 70.
+
+Siz 70 alırsanız → Z = 0
+
+Siz 80 alırsanız → Z = 2
+
+Siz 65 alırsanız → Z = -1
+
+Yani Z-Score, sonucunuzun ortalamadan ne kadar uzakta olduğunu gösteren bir ölçüdür.
+
+Hatırlaması kolay cümle
+Z-Score = “Bu değer ortalamadan kaç standart sapma (σ) uzakta?” sorusunun cevabıdır.
+
+Sınavda tanımanın kolay yolu
+Soruda aşağıdaki bilgiler varsa genellikle Z-Score kullanılır:
+
+Ortalama (Mean, μ)
+
+Standart sapma (Standard Deviation, σ)
+
+Bir kişinin veya bir şeyin değeri (X)
+
+“Ortalamadan ne kadar yüksek veya düşük?” sorusu
+
+Kısaca hatırlama
+Formül:
+
+Z = (X − μ) / σ
+
+Eğer:
+
+Z > 0 → Ortalamadan yüksek
+
+Z = 0 → Ortalama ile aynı
+
+Z < 0 → Ortalamadan düşük
+
+Z-Score'un temel görevi: Bir değerin ortalama değerden ne kadar uzakta olduğunu ölçmektir.
+
