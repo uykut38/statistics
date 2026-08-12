@@ -1,0 +1,663 @@
+# 11. Ders
+
+# Çıkarımsal İstatistik
+
+---
+
+# CONFIDENCE INTERVAL
+
+## Confidence Interval nedir?
+
+**Confidence Interval (Güven Aralığı)**, bir örneklem kullanarak popülasyonun gerçek değerinin hangi aralıkta bulunabileceğini tahmin etmemizi sağlayan istatistiksel bir yöntemdir.
+
+Confidence Interval bize:
+
+**"Gerçek değer bu aralıkta olabilir."**
+
+şeklinde bir tahmin verir.
+
+---
+
+# Basit Bir Örnek
+
+Bir okulda **1000 öğrenci** olduğunu düşünelim.
+
+1000 öğrencinin tamamını incelemek yerine, **100 öğrenci** seçiyoruz.
+
+100 öğrencinin ortalama boyu:
+
+Mean = 160 cm
+
+olarak bulundu.
+
+Ancak 160 cm, 1000 öğrencinin gerçek ortalaması olmayabilir.
+
+Bu nedenle şöyle bir sonuç elde edebiliriz:
+
+95% Confidence Interval = 158 cm to 162 cm
+
+Yani:
+
+**Popülasyonun gerçek ortalamasının 158 cm ile 162 cm arasında olduğuna %95 güven düzeyiyle sahibiz.**
+
+---
+
+# Confidence Level nedir?
+
+**Confidence Level**, bir Confidence Interval'a ne kadar güven duyduğumuzu gösteren güven düzeyidir.
+
+En çok kullanılan Confidence Level değerleri:
+
+90% Confidence Level
+
+95% Confidence Level
+
+99% Confidence Level
+
+En yaygın kullanılan:
+
+**95% Confidence Level**
+
+---
+
+# 95% Confidence Interval nasıl yorumlanır?
+
+Örneğin:
+
+Sample Mean = 50
+
+95% Confidence Interval = 47 to 53
+
+Bunun anlamı:
+
+**Popülasyonun gerçek ortalaması için makul değerler 47 ile 53 arasındadır.**
+
+Bu aralığı **95% Confidence Level** ile kullanıyoruz.
+
+---
+
+# Confidence Interval'in Temel Formülü
+
+Confidence Interval = Estimate ± Margin of Error
+
+Burada:
+
+**Estimate** = Sample kullanılarak elde edilen tahmin değeri
+
+**Margin of Error** = Hata payı
+
+---
+
+# Basit Hesaplama Örneği
+
+Örneğin:
+
+Sample Mean = 100
+
+Margin of Error = 5
+
+Buna göre:
+
+Confidence Interval = 100 ± 5
+
+Alt sınır:
+
+100 - 5 = 95
+
+Üst sınır:
+
+100 + 5 = 105
+
+Sonuç:
+
+95% Confidence Interval = 95 to 105
+
+---
+
+# Confidence Interval neden önemlidir?
+
+Confidence Interval bize yalnızca tek bir sayı değil, bir **aralık** gösterir.
+
+Örneğin:
+
+Sample Mean = 70
+
+Sadece 70 dersek, bu tek bir tahmindir.
+
+Ancak:
+
+95% Confidence Interval = 67 to 73
+
+dersek, Population Mean hakkında daha kapsamlı bir tahmin elde etmiş oluruz.
+
+---
+
+# Confidence Interval'i hatırlamanın en kolay yolu
+
+**Confidence Interval = "Gerçek değer hangi aralıkta olabilir?"**
+
+Örneğin:
+
+Mean = 80
+
+Confidence Interval = 76 to 84
+
+Bunun anlamı:
+
+**Gerçek Population Mean 76 ile 84 arasında olabilir.**
+
+---
+
+# Kısa Özet
+
+**Confidence Interval = Güven Aralığı**
+
+Sample kullanarak Population'ın gerçek değerini tahmin eder.
+
+En çok kullanılan Confidence Level = 95%
+
+Temel formül:
+
+Confidence Interval = Estimate ± Margin of Error
+
+Örneğin:
+
+Estimate = 100
+
+Margin of Error = 5
+
+Confidence Interval = 95 to 105
+
+Hatırlayın:
+
+**Sample → Population'ı tahmin ederiz.**
+
+**Confidence Interval → Gerçek değerin hangi aralıkta olabileceğini gösterir.**
+
+---
+
+# HYPOTHESIS TESTING
+
+# Hipotez Testi
+
+## Hypothesis Testing nedir?
+
+**Hypothesis Testing**, bir örneklem kullanarak popülasyon hakkında ortaya atılan bir hipotezin veriler tarafından desteklenip desteklenmediğini test eden istatistiksel bir yöntemdir.
+
+Basitçe:
+
+Bir hipotez oluştururuz.
+
+Daha sonra bir Sample alırız.
+
+Sample sonuçlarını kullanarak bu hipotez hakkında istatistiksel bir karar veririz.
+
+---
+
+# Basit Bir Örnek
+
+Bir fabrikada bir şişedeki ortalama su miktarının:
+
+500 ml
+
+olması gerektiğini düşünelim.
+
+Bunun doğru olup olmadığını öğrenmek için **50 şişeyi Sample** olarak seçiyoruz.
+
+Bu 50 şişeyi inceliyor ve ortalama miktarı hesaplıyoruz.
+
+Örneğin:
+
+Sample Mean = 497 ml
+
+Şimdi soru:
+
+**Fabrikanın "ortalama miktar 500 ml'dir" iddiası veriler tarafından destekleniyor mu?**
+
+Hypothesis Testing bu soruya cevap vermemize yardımcı olur.
+
+---
+
+# Hypothesis nedir?
+
+**Hypothesis**, test etmek istediğimiz istatistiksel iddiadır.
+
+Hypothesis Testing'de genellikle iki tür Hypothesis bulunur:
+
+1. Null Hypothesis
+2. Alternative Hypothesis
+
+---
+
+# 1. Null Hypothesis
+
+**H₀**
+
+Null Hypothesis, genellikle **"değişiklik yok"** veya **"fark yok"** şeklindeki temel varsayımdır.
+
+Örneğin:
+
+Bir fabrika şişelerin ortalama miktarının 500 ml olduğunu söylüyor.
+
+Null Hypothesis:
+
+H₀: μ = 500
+
+---
+
+# 2. Alternative Hypothesis
+
+**H₁**
+
+Alternative Hypothesis, Null Hypothesis'in alternatifidir.
+
+Örneğin:
+
+H₁: μ ≠ 500
+
+Bunun anlamı:
+
+**"Ortalama miktar 500 ml'ye eşit değildir."**
+
+---
+
+# Hypothesis Testing nasıl yapılır?
+
+Genellikle aşağıdaki adımlarla yapılır:
+
+1. Hypothesis'i belirleriz.
+2. Sample alırız.
+3. Sample sonuçlarını hesaplarız.
+4. P-value'yu buluruz.
+5. P-value ile Significance Level'i karşılaştırırız.
+6. Null Hypothesis'i Reject veya Fail to Reject ederiz.
+
+---
+
+# Significance Level nedir?
+
+**Significance Level**
+
+α
+
+Significance Level, Null Hypothesis'i reddetmek için kullandığımız eşik değerdir.
+
+En çok kullanılan değer:
+
+α = 0.05
+
+Bu:
+
+**%5**
+
+anlamına gelir.
+
+Eğer:
+
+α = 0.05
+
+ise, %5'i Significance Level olarak kullanıyoruz.
+
+---
+
+# P-value nedir?
+
+**P-value**, Null Hypothesis doğru kabul edildiğinde, gözlemlediğimiz örneklem sonucunun ne kadar olağandışı olduğunu değerlendirmemize yardımcı olan bir değerdir.
+
+Basitçe:
+
+**P-value küçükse**, Sample sonucu Null Hypothesis ile daha az uyumludur.
+
+**P-value büyükse**, Sample sonucu Null Hypothesis ile daha uyumludur.
+
+---
+
+# P-value ile α'yı karşılaştırma
+
+En önemli kural:
+
+Eğer:
+
+P-value < α
+
+ise:
+
+Reject H₀
+
+Yani:
+
+**Null Hypothesis'i reddederiz.**
+
+Eğer:
+
+P-value ≥ α
+
+ise:
+
+Fail to Reject H₀
+
+Yani:
+
+**Null Hypothesis'i reddetmek için yeterli kanıt yoktur.**
+
+---
+
+# Basit Örnek
+
+Şunu varsayalım:
+
+H₀: μ = 500
+
+Significance Level:
+
+α = 0.05
+
+Sample'ı inceledikten sonra:
+
+P-value = 0.02
+
+bulundu.
+
+Karşılaştırıyoruz:
+
+0.02 < 0.05
+
+Bu nedenle:
+
+Reject H₀
+
+deriz.
+
+Yani:
+
+**"Null Hypothesis'i reddetmek için yeterli istatistiksel kanıt vardır."**
+
+---
+
+# Bir Başka Basit Örnek
+
+Şunu varsayalım:
+
+H₀: μ = 500
+
+Significance Level:
+
+α = 0.05
+
+Sample sonucu:
+
+P-value = 0.20
+
+Karşılaştırıyoruz:
+
+0.20 > 0.05
+
+Bu nedenle:
+
+Fail to Reject H₀
+
+deriz.
+
+Yani:
+
+**"Null Hypothesis'i reddetmek için yeterli kanıt yoktur."**
+
+---
+
+# Hypothesis Testing'i en basit şekilde anlamak
+
+Bir kişi:
+
+**"Bu fabrikadaki şişelerin ortalama miktarı 500 ml'dir."**
+
+diyor.
+
+Biz bu iddiaya hemen inanmayız ve hemen reddetmeyiz.
+
+Bir Sample alırız.
+
+Sample'ı inceleriz.
+
+Sonuçları istatistiksel olarak değerlendiririz.
+
+Daha sonra karar veririz.
+
+---
+
+# En Önemli İki Karar
+
+P-value < α
+
+↓
+
+Reject H₀
+
+↓
+
+Null Hypothesis'i reddederiz.
+
+---
+
+P-value ≥ α
+
+↓
+
+Fail to Reject H₀
+
+↓
+
+Null Hypothesis'i reddetmek için yeterli kanıt yoktur.
+
+---
+
+# Kısa Özet
+
+**Hypothesis Testing**
+
+Hipotez Testi.
+
+**Null Hypothesis**
+
+H₀
+
+Temel varsayımdır.
+
+**Alternative Hypothesis**
+
+H₁
+
+Null Hypothesis'e karşı alternatif iddiadır.
+
+**Significance Level**
+
+α
+
+Genellikle 0.05 olarak kullanılır.
+
+**P-value**
+
+Sample sonucunun Null Hypothesis ile ne kadar uyumlu olduğunu değerlendirmede kullanılan değerdir.
+
+En önemli kural:
+
+P-value < α
+
+Reject H₀
+
+P-value ≥ α
+
+Fail to Reject H₀
+
+Hatırlamanın en kolay yolu:
+
+**P-value küçük**
+
+↓
+
+**H₀'ı reddederiz.**
+
+**P-value büyük**
+
+↓
+
+**H₀'ı reddetmek için yeterli kanıt yoktur.**
+
+---
+
+# Z-SCORE
+
+## Z-Score nedir?
+
+**Z-Score**, bir değerin **ortalama değerden ne kadar uzakta olduğunu** gösteren bir ölçüdür.
+
+Yani şu soruya cevap verir:
+
+**"Bu değer ortalamadan kaç Standard Deviation uzakta?"**
+
+---
+
+# Z-Score Formülü
+
+z = (x - μ) / σ
+
+Burada:
+
+**x** = İncelemek istediğimiz değer
+
+**μ** = Mean, yani ortalama
+
+**σ** = Standard Deviation, yani standart sapma
+
+**z** = Z-Score
+
+---
+
+# En Basit Örnek
+
+Bir sınıftaki öğrencilerin sınav sonuçlarının:
+
+Mean = 70
+
+Standard Deviation = 10
+
+olduğunu düşünelim.
+
+Bir öğrencinin puanı:
+
+x = 80
+
+olsun.
+
+Z-Score'u bulalım.
+
+Formülde yerine koyalım:
+
+z = (80 - 70) / 10
+
+z = 10 / 10
+
+z = 1
+
+Sonuç:
+
+**Z-Score = 1**
+
+Bunun anlamı:
+
+Bu öğrencinin puanı Mean'den **1 Standard Deviation daha yüksektir.**
+
+---
+
+# Bir Başka Örnek
+
+Bir öğrencinin puanı:
+
+x = 60
+
+olsun.
+
+z = (60 - 70) / 10
+
+z = -10 / 10
+
+z = -1
+
+Sonuç:
+
+**Z-Score = -1**
+
+Bunun anlamı:
+
+Bu öğrencinin puanı Mean'den **1 Standard Deviation daha düşüktür.**
+
+---
+
+# Z-Score'un Pozitif ve Negatif Olması
+
+Z-Score'un işareti, değerin Mean'in hangi tarafında olduğunu gösterir.
+
+**z = 0**
+
+Değer Mean ile aynıdır.
+
+**z > 0**
+
+Değer Mean'den daha yüksektir.
+
+**z < 0**
+
+Değer Mean'den daha düşüktür.
+
+Örneğin:
+
+z = 2 → Mean'den 2 Standard Deviation daha yüksek.
+
+z = 1 → Mean'den 1 Standard Deviation daha yüksek.
+
+z = 0 → Mean ile aynı.
+
+z = -1 → Mean'den 1 Standard Deviation daha düşük.
+
+z = -2 → Mean'den 2 Standard Deviation daha düşük.
+
+---
+
+# Z-Score neden kullanılır?
+
+Z-Score'un en önemli kullanım amaçlarından biri:
+
+**Farklı değerleri karşılaştırabilmektir.**
+
+Örneğin, bir öğrenci Math dersinden 80, English dersinden 85 aldı.
+
+Bu iki puanı doğrudan karşılaştırmak her zaman doğru olmayabilir.
+
+Çünkü iki dersin Mean ve Standard Deviation değerleri farklı olabilir.
+
+Z-Score kullanarak her iki puanı aynı standart ölçekte ifade edebilir ve karşılaştırabiliriz.
+
+---
+
+# Kısa Hatırlatma
+
+**Z-Score = Bir değerin Mean'den kaç Standard Deviation uzakta olduğunu gösterir.**
+
+Formül:
+
+z = (x - μ) / σ
+
+Eğer:
+
+z = 0 → Mean ile aynı
+
+z = +1 → Mean'den 1 Standard Deviation daha yüksek
+
+z = +2 → Mean'den 2 Standard Deviation daha yüksek
+
+z = -1 → Mean'den 1 Standard Deviation daha düşük
+
+z = -2 → Mean'den 2 Standard Deviation daha düşük
+
+## En Önemli Cümle
+
+**Z-Score, bir değerin Mean'den ne kadar uzakta olduğunu Standard Deviation cinsinden gösterir.**
