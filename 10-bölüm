@@ -1,0 +1,465 @@
+# 10. Ders
+
+# Örneklem Alma ve Merkezi Limit Teoremi
+
+Bu ders, **dağılım ile çıkarımsal istatistik arasındaki köprüdür.**
+
+Bu dersin üç temel kavramı:
+
+1. Örneklem dağılımı (Sampling Distribution)
+2. Standart hata (Standard Error)
+3. Merkezi Limit Teoremi (Central Limit Theorem)
+
+## Bu dersin temel sorusu:
+
+**Neden küçük bir örneklem kullanarak bile tüm popülasyon hakkında güvenilir sonuçlar çıkarabiliriz?**
+
+---
+
+# 1. Sampling Distribution (Örneklem Dağılımı)
+
+## Sampling Distribution nedir?
+
+Örneklem dağılımı, aynı popülasyondan aynı büyüklükte birçok örneklem tekrar tekrar seçildiğinde, her örneklemin **ortalama değerlerinin oluşturduğu dağılımdır.**
+
+---
+
+# Basit Bir Örnek
+
+Bir okulda **1000 öğrenci** olduğunu düşünelim.
+
+Tüm öğrencilerin boyunu ölçmek yerine, her seferinde **10 öğrenci** seçiyoruz.
+
+## 1. Örneklem
+
+160, 162, 158, 165, 161, 159, 160, 164, 163, 158
+
+Ortalama:
+
+X̄ = 161 cm
+
+## 2. Örneklem
+
+157, 160, 161, 159, 162, 158, 160, 159, 163, 161
+
+Ortalama:
+
+X̄ = 160 cm
+
+## 3. Örneklem
+
+162, 163, 160, 161, 164, 159, 162, 160, 161, 163
+
+Ortalama:
+
+X̄ = 161.5 cm
+
+Eğer bu işlemi **1000 kez** tekrarlarsak, örneklem ortalamaları şöyle olabilir:
+
+160
+
+160.5
+
+161
+
+159.8
+
+161.3
+
+160.7
+
+...
+
+Bu **örneklem ortalamalarının oluşturduğu dağılıma**:
+
+**Sampling Distribution (Örneklem Dağılımı)** denir.
+
+---
+
+# Sampling Distribution neden gereklidir?
+
+Herkesi tek tek incelemek kolay değildir.
+
+Bu nedenle:
+
+* Bir grup insan seçeriz.
+* Bu insanların ortalamasını hesaplarız.
+* Daha sonra bu sonucu kullanarak tüm popülasyon hakkında tahmin yaparız.
+
+Sampling Distribution bize:
+
+* Population Mean'i tahmin etmeye,
+* Confidence Interval hesaplamaya,
+* Hypothesis Testing yapmaya
+
+yardımcı olur.
+
+---
+
+# 2. Standard Error (SE)
+
+**Türkçe adı: Standart Hata**
+
+## 1. Standard Error (SE) nedir?
+
+Standart hata, örneklemden hesapladığımız **ortalama değerin gerçek popülasyon ortalamasına ne kadar yakın veya uzak olabileceğini gösteren bir ölçüdür.**
+
+Basitçe söylemek gerekirse:
+
+**Standard Deviation (SD)**, verilerin birbirlerinden ne kadar farklı olduğunu gösterir.
+
+**Standard Error (SE)** ise hesapladığımız **örneklem ortalamasının ne kadar güvenilir olduğunu** gösterir.
+
+---
+
+# 2. Standard Error formülü
+
+Eğer Population Standard Deviation biliniyorsa:
+
+SE = σ / √n
+
+Eğer Population Standard Deviation bilinmiyorsa ve Sample Standard Deviation kullanılıyorsa:
+
+SE = s / √n
+
+Burada:
+
+**SE** = Standard Error (Standart Hata)
+
+**σ** = Population Standard Deviation (Popülasyon Standart Sapması)
+
+**s** = Sample Standard Deviation (Örneklem Standart Sapması)
+
+**n** = Sample Size (Örneklem Büyüklüğü)
+
+**√n** = n'nin karekökü
+
+---
+
+# 3. Örnek 1
+
+Bir sınıfta:
+
+Sample Standard Deviation = 10
+
+Sample Size = 25
+
+Hesaplama:
+
+SE = 10 / √25
+
+√25 = 5
+
+SE = 10 ÷ 5 = 2
+
+**Cevap:**
+
+SE = 2
+
+### Açıklama:
+
+Bu, örneklemden hesapladığımız ortalamanın gerçek popülasyon ortalamasından yaklaşık **2 puan civarında farklı olabileceğini** gösterir.
+
+---
+
+# 4. Örnek 2
+
+Bir okulda:
+
+Standard Deviation = 15
+
+Sample Size = 100
+
+Hesaplama:
+
+SE = 15 / √100
+
+√100 = 10
+
+SE = 15 ÷ 10 = 1.5
+
+**Cevap:**
+
+SE = 1.5
+
+### Açıklama:
+
+Örneklem büyüklüğü daha fazla olduğu için standart hata daha küçük oldu.
+
+Bu, hesapladığımız ortalama değerin daha güvenilir olduğunu gösterir.
+
+---
+
+# 5. Örnek 3
+
+Bir sınıfta:
+
+Standard Deviation = 12
+
+Sample Size = 9
+
+Hesaplama:
+
+SE = 12 / √9
+
+√9 = 3
+
+SE = 12 ÷ 3 = 4
+
+**Cevap:**
+
+SE = 4
+
+### Açıklama:
+
+Örneklem büyüklüğü küçük olduğu için standart hata daha büyük çıktı.
+
+Bu da hesapladığımız örneklem ortalamasının daha az güvenilir olduğunu gösterir.
+
+---
+
+# 6. Standard Deviation ile Standard Error arasındaki fark
+
+| Standard Deviation (SD)            | Standard Error (SE)                              |
+| ---------------------------------- | ------------------------------------------------ |
+| Verilerin dağılımını gösterir.     | Örneklem ortalamasının güvenilirliğini gösterir. |
+| Individual Data'yı ölçer.          | Sample Mean'i ölçer.                             |
+| Verilerin kendisiyle ilgilidir.    | Örneklem büyüklüğüyle ilişkilidir.               |
+| n değişse bile çok fazla değişmez. | n büyüdükçe küçülür.                             |
+
+---
+
+# 7. Kolay Hatırlama Yöntemi
+
+**Standard Deviation (SD)** → Verilerin ne kadar dağıldığını gösterir.
+
+**Standard Error (SE)** → Örneklem ortalamasının ne kadar güvenilir olduğunu gösterir.
+
+**Sample Size (n)** büyürse, **SE** küçülür.
+
+**SE** küçükse, hesapladığımız örneklem ortalaması daha güvenilirdir.
+
+---
+
+# Kısa Özet
+
+**Standard Error (SE)**, örneklemden hesapladığımız ortalama değerin gerçek popülasyon ortalamasına ne kadar yakın olabileceğini gösteren bir ölçüdür.
+
+En sık kullanılan formülü:
+
+SE = s / √n
+
+Eğer Population Standard Deviation biliniyorsa:
+
+SE = σ / √n
+
+Standart hata ne kadar küçükse, hesapladığımız örneklem ortalaması o kadar güvenilirdir.
+
+Örneklem büyüklüğü arttıkça, standart hata genellikle küçülür.
+
+---
+
+# 3. Central Limit Theorem (CLT)
+
+**Türkçe adı: Merkezi Limit Teoremi**
+
+---
+
+# 1. Central Limit Theorem (CLT) nedir?
+
+**Central Limit Theorem (Merkezi Limit Teoremi)** şunu söyler:
+
+Eğer büyük bir popülasyondan aynı büyüklükte birçok örneklem tekrar tekrar seçersek, bu örneklemlerin **ortalama değerlerinin dağılımı normal dağılıma yaklaşır.**
+
+---
+
+# 2. Basit Açıklama
+
+Bir okulda **10.000 öğrenci** olduğunu düşünelim.
+
+Öğrencilerin boyları birbirinden farklıdır:
+
+* Bazıları kısa,
+* bazıları orta boylu,
+* bazıları ise çok uzundur.
+
+Şimdi her seferinde **30 öğrenci** seçelim.
+
+Seçtiğimiz 30 öğrencinin boy ortalamasını hesaplayalım.
+
+Bu işlemi **100 kez** tekrarlayalım.
+
+Sonunda 100 tane örneklem ortalaması elde ederiz.
+
+Bu 100 örneklem ortalamasını bir grafik üzerinde gösterirsek, dağılımın **çan şeklinde** olduğunu ve **Normal Distribution'a** yaklaştığını görürüz.
+
+Bu durum **Central Limit Theorem** ile açıklanır.
+
+---
+
+# 3. CLT'nin önemli şartları
+
+CLT'nin doğru şekilde uygulanabilmesi için:
+
+* Örneklemler rastgele (Random) seçilmelidir.
+* Örneklemler birbirinden bağımsız olmalıdır.
+* Örneklem büyüklüğü yeterli olmalıdır.
+
+Genellikle:
+
+**n ≥ 30**
+
+kuralı bir başlangıç noktası olarak kullanılır.
+
+Ancak **n ≥ 30 her durumda kesin bir kural değildir.** Popülasyonun dağılımına ve kullanılan yönteme göre gerekli örneklem büyüklüğü değişebilir.
+
+---
+
+# 4. CLT'nin formülü
+
+Sample Mean'in dağılımı:
+
+X̄ ~ N(μ, σ / √n)
+
+Burada:
+
+**X̄** = Sample Mean (Örneklem Ortalaması)
+
+**μ** = Population Mean (Popülasyon Ortalaması)
+
+**σ** = Population Standard Deviation (Popülasyon Standart Sapması)
+
+**n** = Sample Size (Örneklem Büyüklüğü)
+
+---
+
+# 5. Standard Error (SE)
+
+Eğer Population Standard Deviation biliniyorsa:
+
+SE = σ / √n
+
+Eğer Population Standard Deviation bilinmiyorsa ve Sample Standard Deviation kullanılıyorsa:
+
+SE = s / √n
+
+---
+
+# 6. Örnek 1
+
+Bir okulda:
+
+Population Mean = 70
+
+Population Standard Deviation = 12
+
+Sample Size = 36
+
+Hesaplama:
+
+SE = 12 / √36
+
+√36 = 6
+
+SE = 12 ÷ 6 = 2
+
+### Sonuç:
+
+Mean = 70
+
+Standard Error = 2
+
+Bu durumda örneklem ortalamalarının dağılımının ortalaması **70** ve standart hatası **2** olur.
+
+---
+
+# 7. Örnek 2
+
+Bir fabrikadaki işçilerin günlük çalışma süreleri birbirinden farklıdır.
+
+Örneğin:
+
+* Bazıları 5 saat,
+* bazıları 7 saat,
+* bazıları 9 saat,
+* bazıları 12 saat çalışmaktadır.
+
+Bu popülasyon normal dağılmamış olabilir.
+
+Ancak her seferinde **40 işçi** seçip onların ortalama çalışma süresini hesaplayalım.
+
+Bu işlemi **200 kez** tekrarlayalım.
+
+Sonuçta elde ettiğimiz **200 Sample Mean** değerinin dağılımı, **Normal Distribution'a** yaklaşır.
+
+Bu durum **Central Limit Theorem'in** bir sonucudur.
+
+---
+
+# 8. Örnek 3
+
+Bir şehirde **100.000 kişi** olduğunu düşünelim.
+
+Her seferinde:
+
+**50 kişi** seçiyoruz.
+
+Bu kişilerin ortalama gelirini hesaplıyoruz.
+
+Bu işlemi **500 kez** tekrarlıyoruz.
+
+Sonuçta elde edilen **500 Sample Mean** değerinin dağılımı, **çan şeklinde (bell shape)** bir dağılıma yaklaşır.
+
+Bu da **Central Limit Theorem'in** bir sonucudur.
+
+---
+
+# 9. CLT neden önemlidir?
+
+**Central Limit Theorem**, istatistikteki en önemli teoremlerden biridir.
+
+Bize, yalnızca bir örneklemi inceleyerek tüm popülasyon hakkında **istatistiksel olarak güvenilir sonuçlar çıkarabilmemiz** için önemli bir temel sağlar.
+
+Bu nedenle aşağıdaki yöntemlerin anlaşılmasında önemli bir rol oynar:
+
+* Confidence Interval
+* Hypothesis Testing
+* Z-test
+* T-test
+* Regression Analysis
+
+---
+
+# Genel Özet
+
+Bu derste üç temel kavram öğrendik:
+
+## 1. Sampling Distribution
+
+Birçok örneklemden elde edilen **örneklem ortalamalarının oluşturduğu dağılımdır.**
+
+## 2. Standard Error
+
+Örneklem ortalamasının ne kadar değişebileceğini ve tahminin ne kadar hassas olduğunu gösterir.
+
+Formül:
+
+SE = σ / √n
+
+veya
+
+SE = s / √n
+
+## 3. Central Limit Theorem
+
+Yeterince büyük örneklemlerden elde edilen örneklem ortalamalarının dağılımı, popülasyonun dağılımı normal olmasa bile, **Normal Distribution'a yaklaşır.**
+
+---
+
+# Bu Dersin Ana Fikri
+
+**Population → Sample → Sample Mean → Sampling Distribution → Standard Error → Central Limit Theorem → Güvenilir İstatistiksel Sonuç**
+
+Yani:
+
+**Küçük bir örneklemden elde ettiğimiz bilgiyi kullanarak, doğru istatistiksel yöntemlerle büyük popülasyon hakkında sonuç çıkarabiliriz.**
