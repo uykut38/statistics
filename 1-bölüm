@@ -1,0 +1,563 @@
+2. DERS: VERI TÜRLERI VE ÖLÇME DÜZEYLERI
+
+3. VERI (DATA)
+
+Veri: Araştırma konusu olan birimlerden toplanan değerlerin toplamıdır.
+Belirli bir araştırma için toplanan bütün değerler veri olarak adlandırılır.
+
+Örnek:
+
+* Öğrencilerin sınav puanları
+* Günlük sıcaklık değerleri
+* Arabaların hızları
+
+2. DEĞIŞKEN (VARIABLE)
+
+Değişken: Değeri değişebilen özellik veya niteliktir.
+
+Örnek:
+
+* Boy uzunluğu
+* Yaş
+* Gelir miktarı
+
+Önemli nokta:
+Her bir değişkenin belirli bir zamanda aldığı somut değere gözlem (observation) denir.
+
+3. İSTATISTIKTE EVREN VE ÖRNEKLEM
+
+İstatistikte en önemli iki kavram:
+
+1. Evren (Population)
+2. Örneklem (Sample)
+
+EVREN (POPULATION)
+
+Evren: Araştırmak istediğimiz bütün bireylerin veya nesnelerin tamamıdır.
+
+Örnek:
+
+* Bir ülkedeki bütün vatandaşlar
+* Bir fabrikadaki bütün ürünler
+* Bir okuldaki bütün öğrenciler
+
+ÖRNEKLEM (SAMPLE)
+
+Örneklem: Evrenden seçilen daha küçük bir gruptur.
+
+Örnek:
+
+* 1000 vatandaştan seçilen 50 kişi
+* Fabrikadaki ürünlerden seçilen 10 ürün
+* Okuldaki öğrencilerden seçilen 100 öğrenci
+
+PARAMETRE (PARAMETER)
+
+Parametre: Evreni tanımlayan sayısal değerdir.
+
+Örnek:
+Bir ülkenin nüfusunun ortalama yaşı.
+
+İSTATISTIK (STATISTIC)
+
+İstatistik: Örneklem kullanılarak hesaplanan sayısal değerdir.
+
+Örnek:
+50 kişinin ortalama boy uzunluğu.
+
+DİKKAT:
+
+Örneklem mutlaka evreni temsil etmelidir.
+Rastgele (tesadüfi) örnekleme, örneklem seçiminin en önemli ilkelerinden biridir.
+
+4. VERI TÜRLERI
+
+Veriler genel olarak iki ana gruba ayrılır:
+
+1. Nitel Veri (Qualitative Data)
+
+2. Nicel Veri (Quantitative Data)
+
+3. NITEL VERI (QUALITATIVE DATA)
+
+Nitel veri, bir özellik veya kategoriyi ifade eden verilerdir.
+
+İki gruba ayrılır:
+
+a) Nominal Veri
+b) Ordinal Veri
+
+NOMINAL VERI
+
+Nominal veri: Kategoriler arasında herhangi bir sıralama bulunmayan verilerdir.
+
+Örnek:
+
+* Cinsiyet
+* Renk
+* Ülke
+* Kan grubu
+
+ORDINAL VERI
+
+Ordinal veri: Kategoriler arasında bir sıralama bulunan verilerdir.
+
+Örnek:
+
+* Eğitim düzeyi
+* Memnuniyet düzeyi
+* Başarı düzeyi
+
+2. NICEL VERI (QUANTITATIVE DATA)
+
+Nicel veri, sayılarla ifade edilen verilerdir.
+
+İki gruba ayrılır:
+
+a) Kesikli Veri (Discrete Data)
+b) Sürekli Veri (Continuous Data)
+
+KESIKLI VERI (DISCRETE DATA)
+
+Kesikli veri: Sayılabilen ve genellikle tam sayılarla ifade edilen verilerdir.
+
+Örnek:
+
+* Çocuk sayısı
+* Ev sayısı
+* Öğrenci sayısı
+* Bir sınıftaki masa sayısı
+
+SÜREKLI VERI (CONTINUOUS DATA)
+
+Sürekli veri: Ölçülebilen ve belirli bir aralıkta herhangi bir değer alabilen verilerdir.
+
+Örnek:
+
+* Sıcaklık
+* Zaman
+* Boy uzunluğu
+* Ağırlık
+
+ÖNEMLI NOT:
+
+Veri türünü doğru belirlemek, doğru istatistiksel yöntemi seçmenin temelidir.
+
+5. ÖLÇME DÜZEYLERI
+
+Verilerin ölçülme düzeyi dört çeşittir:
+
+1. Nominal Ölçek
+
+2. Ordinal Ölçek
+
+3. Interval (Aralık) Ölçeği
+
+4. Ratio (Oran) Ölçeği
+
+5. NOMINAL ÖLÇEK
+
+Sadece kategorilere ayırma amacıyla kullanılır.
+Kategoriler arasında sıralama yoktur.
+
+Örnek:
+
+* Cinsiyet
+* Kan grubu
+* Renk
+* Ülke
+
+2. ORDINAL ÖLÇEK
+
+Veriler sıralanabilir.
+Ancak kategoriler arasındaki farkların eşit olduğu söylenemez.
+
+Örnek:
+
+* Eğitim düzeyi
+* Memnuniyet düzeyi
+* Başarı sıralaması
+
+3. INTERVAL (ARALIK) ÖLÇEĞI
+
+Değerler arasındaki aralıklar eşittir.
+Ancak gerçek ve anlamlı bir sıfır noktası yoktur.
+
+Örnek:
+
+* Sıcaklık (Celsius)
+* Takvim yılları
+
+Örneğin:
+20°C, 10°C'den 10 derece daha sıcaktır.
+Ancak 20°C, 10°C'nin iki katı sıcak değildir.
+
+4. RATIO (ORAN) ÖLÇEĞI
+
+Aralıklar eşittir ve gerçek bir sıfır noktası vardır.
+Bu nedenle oran karşılaştırmaları yapılabilir.
+
+Örnek:
+
+* Boy uzunluğu
+* Ağırlık
+* Yaş
+* Gelir
+* Zaman
+
+Örneğin:
+20 kg, 10 kg'ın iki katıdır.
+
+NEDEN ÖNEMLI?
+
+Her ölçme düzeyi için kullanılabilecek uygun istatistiksel yöntemler vardır.
+
+Nominal:
+
+* Frekans
+* Yüzde
+* Oran
+
+Ordinal:
+
+* Sıralama
+* Medyan
+* Yüzdelik değerler
+
+Interval ve Ratio:
+
+* Toplama
+* Çıkarma
+* Çarpma
+* Bölme
+* Ortalama
+* Varyans
+* Standart sapma
+  gibi matematiksel ve istatistiksel işlemler kullanılabilir.
+
+6. MERKEZIL EĞILIM ÖLÇÜLERI
+
+Merkezi eğilim ölçülerinin üç temel türü vardır:
+
+1. Ortalama (Mean)
+
+2. Medyan (Median)
+
+3. Mod (Mode)
+
+4. MEAN (ORTALAMA)
+
+Bütün sayıların toplamının, sayıların toplam adedine bölünmesiyle elde edilen değerdir.
+
+Formül:
+
+Mean = Sayıların toplamı / Sayıların toplam adedi
+
+Örnek:
+
+Sayılar:
+2, 4, 4, 3, 7
+
+1. Sayıların toplamı:
+
+2 + 4 + 4 + 3 + 7 = 20
+
+2. Sayıların toplam adedi:
+
+5
+
+3. Hesaplama:
+
+20 / 5 = 4
+
+Sonuç:
+
+Mean = 4
+
+2. MEDIAN (ORTANCA DEĞER)
+
+Sayılar küçükten büyüğe sıralandığında tam ortada bulunan değere medyan denir.
+
+Örnek 1: Sayıların adedi tek ise
+
+Sayılar:
+
+2, 4, 4, 3, 7
+
+Küçükten büyüğe sıralama:
+
+2, 3, 4, 4, 7
+
+Ortadaki sayı:
+
+4
+
+Sonuç:
+
+Median = 4
+
+Örnek 2: Sayıların adedi çift ise
+
+Sayılar:
+
+2, 4, 4, 3, 7, 10
+
+Küçükten büyüğe sıralama:
+
+2, 3, 4, 4, 7, 10
+
+Ortadaki iki sayı:
+
+4 ve 4
+
+Hesaplama:
+
+(4 + 4) / 2 = 4
+
+Sonuç:
+
+Median = 4
+
+3. MODE (MOD)
+
+Bir veri grubunda en fazla tekrar eden değere mod denir.
+
+Örnek:
+
+2, 4, 4, 3, 7
+
+Burada 4 sayısı iki kez tekrar etmiştir.
+
+Diğer sayılar yalnızca bir kez bulunmaktadır.
+
+Sonuç:
+
+Mode = 4
+
+7. DAĞILIM ÖLÇÜLERI
+
+Dağılım ölçülerinin temel türleri:
+
+1. Range (Aralık)
+
+2. Variance (Varyans)
+
+3. Standard Deviation (Standart Sapma)
+
+4. RANGE (ARALIK)
+
+Range, en büyük değer ile en küçük değer arasındaki farktır.
+
+Formül:
+
+Range = Max - Min
+
+Örnek:
+
+85, 90, 85, 80, 75
+
+Max = 90
+Min = 75
+
+Range = 90 - 75 = 15
+
+Sonuç:
+
+Range = 15
+
+2. VARIANCE (VARYANS)
+
+Varyans, her bir değerin ortalamadan ne kadar uzak olduğunu gösteren ölçünün karesel ortalamasıdır.
+
+Popülasyon varyansı için temel formül:
+
+Variance = Sum of (xi - x_mean)^2 / N
+
+Burada:
+
+xi = Her bir veri değeri
+x_mean = Ortalama
+N = Veri sayısı
+
+3. STANDARD DEVIATION (STANDART SAPMA)
+
+Standart sapma, varyansın kareköküdür.
+
+Formül:
+
+Standard Deviation = sqrt(Variance)
+
+Örnek:
+
+Variance = 25
+
+Standard Deviation = sqrt(25) = 5
+
+Sonuç:
+
+Standard Deviation = 5
+
+8. OLASILIK TEMELLERI
+
+OLASILIK NEDIR?
+
+Olasılık, bir olayın gerçekleşme ihtimalini sayısal olarak ifade eder.
+
+Temel formül:
+
+P(A) = A olayının gerçekleşebileceği sonuç sayısı / Tüm mümkün sonuçların sayısı
+
+TEMEL OLASILIK KURALLARI
+
+Olasılık değeri:
+
+0 <= P(A) <= 1
+
+KESIN OLAY
+
+Kesinlikle gerçekleşecek olayın olasılığı:
+
+P(A) = 1
+
+İMKANSIZ OLAY
+
+Gerçekleşmesi mümkün olmayan olayın olasılığı:
+
+P(A) = 0
+
+TAMAMLAYICI OLAY KURALI
+
+P(A') = 1 - P(A)
+
+ÖRNEKLER
+
+Örnek 1: Para atma
+
+Bir madeni para atıldığında yazı gelme olasılığı:
+
+P(Yazı) = 1 / 2 = 0.5
+
+Örnek 2: Zar atma
+
+Bir zar atıldığında 6 gelme olasılığı:
+
+P(6) = 1 / 6 = 0.167
+
+Örnek 3: Kutudan top çekme
+
+Bir kutuda:
+
+3 kırmızı top
+2 mavi top
+
+Toplam top sayısı:
+
+3 + 2 = 5
+
+Kırmızı top çekme olasılığı:
+
+P(Kırmızı) = 3 / 5 = 0.6
+
+9. ÇIKARIMSAL İSTATISTIK
+
+Çıkarımsal istatistik, örneklem verilerini kullanarak evren hakkında sonuç çıkarmaktır.
+
+Temel yöntemler:
+
+1. Tahmin (Estimation)
+
+2. Hipotez Testi (Hypothesis Testing)
+
+3. TAHMIN (ESTIMATION)
+
+Evren parametresini örneklem verilerini kullanarak tahmin etmektir.
+
+İki temel tahmin türü vardır:
+
+a) Nokta Tahmini (Point Estimation)
+b) Aralık Tahmini (Interval Estimation)
+
+2. HIPOTEZ TESTI (HYPOTHESIS TESTING)
+
+Evren hakkında ortaya atılan bir hipotezin istatistiksel olarak test edilmesidir.
+
+Örnek:
+
+Yeni bir ilaç kan basıncını düşürüyor mu?
+
+HIPOTEZ TESTININ AŞAMALARI
+
+1. Null Hipotez (H0) ve Alternatif Hipotez (H1) oluşturulur.
+
+2. Anlamlılık düzeyi (alpha) belirlenir.
+
+3. Test istatistiği hesaplanır.
+
+4. P-değeri bulunur veya test istatistiği kritik değer ile karşılaştırılır.
+
+5. Karar verilir:
+
+   * H0 reddedilir.
+   * H0 reddedilemez.
+
+KISA ÖZET
+
+Veri (Data):
+Araştırmada toplanan değerlerdir.
+
+Değişken (Variable):
+Değeri değişebilen özelliktir.
+
+Evren (Population):
+Araştırılmak istenen bütün gruptur.
+
+Örneklem (Sample):
+Evrenin seçilen küçük bir bölümüdür.
+
+Parametre (Parameter):
+Evreni tanımlayan sayısal değerdir.
+
+İstatistik (Statistic):
+Örneklemden hesaplanan sayısal değerdir.
+
+Nitel Veri:
+Kategori veya özellik bildiren verilerdir.
+
+Nicel Veri:
+Sayısal olarak ifade edilen verilerdir.
+
+Nominal:
+Sadece kategorilere ayırır.
+
+Ordinal:
+Sıralama yapılabilir.
+
+Interval:
+Eşit aralık vardır fakat gerçek sıfır yoktur.
+
+Ratio:
+Eşit aralık vardır ve gerçek sıfır vardır.
+
+Mean:
+Aritmetik ortalamadır.
+
+Median:
+Sıralanmış verilerin ortasındaki değerdir.
+
+Mode:
+En sık tekrar eden değerdir.
+
+Range:
+En büyük değer ile en küçük değer arasındaki farktır.
+
+Variance:
+Verilerin ortalamadan ne kadar yayıldığını gösterir.
+
+Standard Deviation:
+Varyansın kareköküdür.
+
+Probability:
+Bir olayın gerçekleşme olasılığıdır.
+
+Çıkarımsal İstatistik:
+Örneklemden yararlanarak evren hakkında sonuç çıkarmaktır.
