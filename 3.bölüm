@@ -1,452 +1,378 @@
-LESSON 2
+3. DERS
 
-DATA TYPES AND LEVELS OF MEASUREMENT
+VERİ TOPLAMA VE ÖRNEKLEME
 
-Which Calculation Method Should Be Used for Which Type of Data?
+Kötü toplanan veri hiçbir zaman iyi sonuç vermez.
 
-The most important principle:
+Garbage in, Garbage out.
 
-Each type of data has its own appropriate calculation method.
+Çöp girerse, çöp çıkar.
 
-DATA
+Dünyadaki en iyi istatistiksel yöntem bile veri kötüyse hiçbir şey yapamaz.
 
-Data means all the information we collect about a subject, person, object, or event.
+BU DERSİN AMACI
 
-Simply:
+Veri toplarken veya başkalarının verilerini incelerken, örneklemin doğru olup olmadığını ve olası hataları değerlendirebilmek.
 
-Data = Collected information
+VERİ TOPLAMANIN 3 TEMEL YÖNTEMİ
 
-This information can be numbers, words, colors, names, or other types of information.
+1. Census
+   Tam sayım: Tüm popülasyonu incelemek
 
-EXAMPLE 1: EXAM SCORES
+2. Survey
+   Anket: Sorular aracılığıyla veri toplamak
 
-The mathematics exam scores of 5 students in a class:
+3. Sampling
+   Örnekleme: Küçük bir gruptan hareket ederek tüm popülasyon hakkında sonuç çıkarmak
 
-75, 80, 90, 65, 85
+4. CENSUS - TAM SAYIM
 
-These 5 scores together are a Data set.
+Census, popülasyondaki bütün bireylerin veya birimlerin araştırmaya dahil edilmesidir.
 
-EXAMPLE 2: HEIGHT
+AVANTAJLARI:
 
-The heights of 5 people:
+* Herkesi kapsar.
+* En doğru sonuçlardan birini verir.
+* Her bir birim hesaba katılır.
+* Ayrıntılı analiz yapılabilir.
 
-160, 165, 170, 158, 175 cm
+DEZAVANTAJLARI:
 
-These numbers are also a Data set.
+* Maliyetlidir.
+* Çok zaman alır.
+* Çoğu durumda uygulanması mümkün değildir.
+* Bazen yıkıcı olabilir.
 
-TWO MAIN TYPES OF DATA
+Örneğin:
 
-1. QUALITATIVE DATA
+Bir ilaç testinde bütün hayvanları test etmek için hayvanların zarar görmesi veya ölmesi gerekebilir.
 
-Categorical Data
+ÖRNEKLER:
 
-This type of data is not measured with numbers. It mainly describes a characteristic, quality, or category.
+* Ülke nüfus sayımı
+* Okul sınavları
+* Fabrikada kalite kontrolü
+* Hastane kayıtları
 
-Examples:
+NE ZAMAN CENSUS KULLANILIR?
 
-* Gender: Male, Female
-* Color: Red, Blue, Green
-* Blood group: A, B, AB, O
-* Fruit type: Apple, Banana
+* Popülasyon küçükse
+* Doğruluk çok önemliyse
+* Yeterli zaman ve kaynak varsa
 
-It is not appropriate to perform normal arithmetic operations or calculate the mean for these types of data.
+2. SAMPLING - ÖRNEKLEME
 
-NOMINAL LEVEL
+Sampling, tüm popülasyondan onu temsil eden daha küçük bir grubun seçilmesidir.
 
-Nominal Level is the most basic level of measurement.
+Amaç, seçilen örneklemden yararlanarak tüm popülasyon hakkında sonuç çıkarmaktır.
 
-At this level, data are divided only into different categories.
+AVANTAJLARI:
 
-There is no ranking or order between the categories.
+* Hızlıdır.
+* Daha ucuzdur.
+* Uygulanması daha kolaydır.
+* Pratiktir.
 
-1. DICHOTOMOUS DATA
+DEZAVANTAJLARI:
 
-English:
+* Hata olasılığı vardır.
+* Örneklem kötü seçilirse sonuçlar yanlış olabilir.
 
-Dichotomous Data / Binary Data
+ÖRNEK:
 
-Explanation:
+Seçim öncesi kamuoyu araştırması.
 
-This type of data has only two possible options.
+NEDEN ÖRNEKLEME YAPARIZ?
 
-Examples:
+4 temel neden vardır:
 
-* Answer: Yes / No
-* Exam result: Pass / Fail
-* Product quality: Acceptable / Not acceptable
+1. Zaman tasarrufu
+2. Para tasarrufu
+3. Uygulanabilirlik
+   Bazen tüm popülasyona ulaşmak mümkün değildir.
+4. Yıkıcı testlerden kaçınmak
 
-2. MULTINOMIAL DATA
+Örneğin:
 
-English:
+Bütün ürünleri test ederseniz, test sırasında bütün ürünler zarar görebilir.
 
-Multinomial Data / Polytomous Data
+Gerçek hayatta çoğu durumda örnekleme kullanılır.
 
-Explanation:
+Bu nedenle örnekleme yöntemlerini doğru bilmek çok önemlidir.
 
-This type of data has three or more possible options.
+BIAS - YANLILIK
 
-However, there is no ranking or order between the options.
+Bias, veri veya örneklemin sistematik olarak bazı bireylere veya gruplara diğerlerinden daha fazla avantaj sağlamasıdır.
 
-Examples:
+Bias varsa sonuçlar sürekli olarak belirli bir yöne doğru kayabilir.
 
-* Eye color: Black, Brown, Blue, Green
-* Organization type: Government, Private, Foreign
-* Economic sector: Agriculture, Industry, Services
+3 BÜYÜK BIAS TÜRÜ
 
-3. IDENTIFIER NOMINAL DATA
+1. Selection Bias - Seçim Yanlılığı
 
-English:
+Örneklem, popülasyonu doğru şekilde temsil etmez.
 
-Identifier Nominal Data
+2. Response Bias - Yanıt Yanlılığı
 
-Explanation:
+İnsanlar doğru cevap vermeyebilir.
 
-This type of data is used to identify and distinguish a person, object, or record from others.
+3. Measurement Bias - Ölçüm Yanlılığı
 
-These numbers do not have mathematical meaning.
+Ölçüm aracı veya ölçüm yöntemi hatalıdır.
 
-They are used only for identification.
+RANDOM SAMPLING - RASTGELE ÖRNEKLEME
 
-Examples:
+Popülasyondaki her birimin örnekleme seçilme olasılığının eşit olduğu örnekleme yöntemidir.
 
-* ID number
-* Student number
-* Vehicle license plate number
+Random Sampling, yanlılığı azaltmanın en iyi yollarından biridir.
 
-METHODS THAT CAN BE USED FOR NOMINAL DATA
+NASIL YAPILIR?
 
-The most appropriate methods are:
+1. Popülasyondaki herkesin listesini hazırlayın.
 
-* Mode
-* Frequency
-* Percentage
+2. Her kişiye bir numara verin.
 
-Mean and Median are not appropriate for nominal data.
+3. Rastgele sayı üreteci kullanın.
 
-2. QUANTITATIVE DATA
+4. Seçilen numaralara karşılık gelen kişiler örnekleme dahil edilir.
 
-Numerical Data
+AVANTAJLARI:
 
-This type of data is expressed using numbers and mathematical calculations can be performed.
+* Yanlılık en düşük seviyededir.
+* İstatistiksel analiz için uygundur.
+* Sonuçlar tüm popülasyona genellenebilir.
+* Basit ve anlaşılırdır.
 
-Examples:
+DEZAVANTAJLARI:
 
-* Age: 18, 20, 25
-* Height: 165 cm, 170 cm
-* Weight: 60 kg, 72 kg
-* Exam score: 80, 95, 76
+* Tüm popülasyonun listesine ihtiyaç vardır.
+* Büyük ve dağınık popülasyonlarda maliyetli olabilir.
+* Küçük alt gruplar örneklemde temsil edilmeyebilir.
 
-For these data, we can calculate the mean, maximum value, minimum value, and other statistics.
+ÇOK YAYGIN BİR HATA:
 
-MAIN TYPES OF QUANTITATIVE DATA
+"Rastgele" kelimesi "gelişigüzel" veya "önüne geleni seçmek" anlamına gelmez.
 
-1. DISCRETE DATA
+Örnek:
 
-Explanation:
+Sokakta karşılaştığı insanlara soru soran bir muhabir gerçek anlamda Random Sampling yapmış olmaz.
 
-Discrete Data are obtained by counting and consist of separate, distinct values.
+Çünkü yalnızca o sokaktan geçen insanlar seçilmiştir.
 
-They are usually expressed as whole numbers.
+Bu nedenle tüm popülasyonu temsil etmeyebilir.
 
-Examples:
+STRATIFIED SAMPLING - KATMANLI ÖRNEKLEME
 
-* Number of children in a family: 2, 3, 4
-* Number of students in a school
-* Number of visitors in a month
+Stratified Sampling, büyük bir popülasyonu önce benzer özelliklere sahip küçük gruplara, yani katmanlara ayırıp daha sonra her katmandan belirli bir oranda örnek seçme yöntemidir.
 
-For example:
+KATMANLI ÖRNEKLEMEYİ BASİTÇE ANLAMA
 
-2.5 children or 3.7 students cannot normally be used.
+Bu yöntemin temel amacı:
 
-Therefore, these are called Discrete Data.
+Araştırmada farklı gruplara adil bir şekilde yer vermek ve sonuçların daha doğru olmasını sağlamaktır.
 
-2. CONTINUOUS DATA
+ÖRNEK 1: OKULDAKİ ÖĞRENCİLER SEBZE YEMEYİ SEVİYOR MU?
 
-Explanation:
+Bir okulda 1000 öğrenci olduğunu ve öğrencilerin beslenme alışkanlıklarını araştırmak istediğinizi düşünelim.
 
-Continuous Data can take any value within a certain range.
+Okulda 4 sınıf düzeyi vardır:
 
-They can include decimal and fractional values.
+1. sınıf: 400 öğrenci (%40)
 
-They are usually obtained through measurement.
+2. sınıf: 300 öğrenci (%30)
 
-Examples:
+3. sınıf: 200 öğrenci (%20)
 
-* Height: 1.75 meters
-* Temperature: 36.6 °C
-* Weight: 68.5 kg
-* Speed: 72.5 km/hour
+4. sınıf: 100 öğrenci (%10)
 
-LEVELS OF MEASUREMENT
+Toplam 100 öğrenciden örneklem almak istiyorsunuz.
 
-Data can be divided into 4 main levels of measurement:
+Eğer öğrencileri gelişigüzel seçerseniz, örneğin seçilen öğrencilerin çoğu 1. sınıftan olabilir.
 
-1. Nominal Level
+Bu durumda diğer sınıflardaki öğrencilerin görüşleri yeterince temsil edilmeyebilir.
 
-2. Ordinal Level
+STRATIFIED SAMPLING KULLANIRSAK:
 
-3. Interval Level
+Okuldaki yüzdelik oranlara göre 100 öğrenciyi dengeli şekilde seçeriz:
 
-4. Ratio Level
+1. sınıftan: 40 öğrenci
 
-5. NOMINAL LEVEL
+2. sınıftan: 30 öğrenci
 
-Characteristics:
+3. sınıftan: 20 öğrenci
 
-Data are divided only into categories.
+4. sınıftan: 10 öğrenci
 
-There is no ranking or order between the categories.
+Böylece seçilen 100 öğrenci, tüm okulun gerçek yapısını daha iyi temsil eder.
 
-Examples:
+ÖRNEK 2: CEP TELEFONU ŞİRKETİNİN PAZAR ARAŞTIRMASI
 
-* Color
-* Gender
-* Blood group
-* Fruit type
+Bir cep telefonu şirketi, yeni çıkardığı telefonun fiyatı hakkında kullanıcıların ne düşündüğünü öğrenmek istiyor.
 
-Main idea:
+Gelir düzeyi insanların görüşlerini etkileyebileceği için insanlar gelirlerine göre 3 gruba ayrılıyor:
 
-It answers only the question:
+* Düşük gelirli kişiler
+* Orta gelirli kişiler
+* Yüksek gelirli kişiler
 
-"Which category does it belong to?"
+Eğer yalnızca bir gruptan örneklem alınırsa araştırmanın sonucu yanıltıcı olabilir.
 
-2. ORDINAL LEVEL
+Bu nedenle şirket her gelir grubundan belirli bir oranda kişi seçerek görüşlerini alır.
 
-Characteristics:
+Bu yöntem daha dengeli ve daha adil bir sonuç elde edilmesine yardımcı olur.
 
-Data are divided into categories and can also be ranked or ordered.
+KATMANLI ÖRNEKLEMENİN FAYDALARI
 
-However, the exact difference between the categories is not known.
+* Daha yüksek doğruluk:
+  Küçük grupların araştırmada gözden kaçması önlenir.
 
-Example:
+* Daha güçlü temsil:
+  Örneklem, büyük popülasyonun yapısına daha çok benzer.
 
-Satisfaction level:
+NOT:
 
-* Very satisfied
-* Satisfied
-* Neutral
-* Dissatisfied
-* Very dissatisfied
+Bilimsel araştırmalarda Random Sampling veya Stratified Sampling kullanılması önerilir.
 
-There is an order.
+Convenience Sampling kullanmak en kolay yöntemlerden biridir.
 
-However, we cannot say that the difference between "Satisfied" and "Very satisfied" is exactly the same as the difference between "Neutral" and "Dissatisfied."
+Ancak sonuçları en az güvenilir yöntemlerden biri olabilir.
 
-METHODS THAT CAN BE USED FOR ORDINAL DATA
+CONVENIENCE SAMPLING - KOLAYDA ÖRNEKLEME
 
-* Mode
-* Median
-* Frequency
-* Percentage
+Araştırmacının ulaşması kolay olan kişilerden örneklem seçmesidir.
 
-Mean is generally not appropriate.
+Örnek:
 
-3. INTERVAL LEVEL
+Sokakta karşılaştığı insanlara soru soran bir muhabir.
 
-Characteristics:
+ÖRNEKLEM BÜYÜKLÜĞÜ
 
-The differences between values are equal and meaningful.
+Örneklem ne kadar büyük olursa, sonuçlar genellikle o kadar güvenilir olur.
 
-However, there is no true or absolute zero point.
+Ancak "büyük örneklem her zaman daha iyidir" demek doğru değildir.
 
-In other words, a value of 0 does not mean that the measured thing completely does not exist.
+Örneklemin temsil edici olması daha önemlidir.
 
-Example:
+ÖRNEKLEM BÜYÜKLÜĞÜNÜ BELİRLEYEN FAKTÖRLER
 
-Celsius temperature.
+BÜYÜK ÖRNEKLEM GEREKTİĞİNDE:
 
-0 °C does not mean that temperature does not exist.
+* Yüksek doğruluk gerekiyorsa
+* Popülasyon çok çeşitliyse
+* Küçük gruplar ayrıca analiz edilecekse
+* Yeterli zaman ve kaynak varsa
 
-It represents a specific temperature point.
+KÜÇÜK ÖRNEKLEM YETERLİ OLDUĞUNDA:
 
-For example:
+* Popülasyon birbirine çok benziyorsa
+* Zaman ve kaynaklar sınırlıysa
+* Araştırma veya deney ön çalışması yapılıyorsa
+* Yaklaşık bir sonuç yeterliyse
 
-The difference between 20 °C and 30 °C is 10 °C.
+ALTIN KURAL
 
-The difference between 10 °C and 20 °C is also 10 °C.
+1. Öncelikle örneklemin temsil edici olduğundan emin olun.
 
-Therefore, the differences between values are meaningful and equal.
+2. Daha sonra mümkün olduğunca yeterli büyüklükte bir örneklem seçin.
 
-METHODS THAT CAN BE USED FOR INTERVAL DATA
+3. En önemlisi:
+   Mümkün olduğunca rastgele seçim yöntemini kullanın.
 
-* Mode
-* Median
-* Mean
-* Standard deviation
-* Variance
-* Other appropriate statistical methods
+GERÇEK HAYATTAN ÖRNEKLER
 
-4. RATIO LEVEL
+ÖRNEK 1: SEÇİM ÖNCESİ KAMUOYU ARAŞTIRMASI
 
-Characteristics:
+Popülasyon:
 
-Ratio Level has similar properties to Interval Level.
+Tüm seçmenler (milyonlarca kişi)
 
-However, Ratio Level has a true and absolute zero point.
+Örneklem:
 
-A value of 0 means that the measured quantity is actually absent.
+1000 - 1500 kişi
 
-Ratio comparisons can also be made.
+Yöntem:
 
-Example:
+Stratified Random Sampling
+(Katmanlı Rastgele Örnekleme)
 
-Money / Income:
+ÖRNEK 2: İLAÇ TESTİ
 
-0 TL = No money.
+Popülasyon:
 
-When comparing 100 TL and 200 TL:
+Tüm hastalar
 
-200 TL is twice as much as 100 TL.
+Örneklem:
 
-Another example:
+500 - 3000 hasta
 
-0 kg = No weight.
+Yöntem:
 
-20 kg is twice as much as 10 kg.
+Random Assignment
+(Rastgele Atama)
 
-METHODS THAT CAN BE USED FOR RATIO DATA
+Önemli:
 
-Many statistical methods can be used with Ratio Level data.
+Bir grup yeni ilacı alır.
 
-For example:
+Diğer grup plasebo alır.
 
-* Mode
-* Median
-* Mean
-* Standard deviation
-* Variance
-* Ratio comparisons
-* Other appropriate statistical methods
+ÖRNEK 3: FABRİKADA KALİTE KONTROLÜ
 
-SHORT SUMMARY
+Popülasyon:
 
-QUALITATIVE DATA
+Günde üretilen 100.000 ürün
 
-Categorical Data
+Örneklem:
 
-1. Nominal
+Her saat 50 ürün
 
-Only divides data into categories.
+Yöntem:
 
-Example:
+Systematic Sampling
+(Sistematik Örnekleme)
 
-Color, gender, blood group
+COMMON MISTAKES
 
-2. Ordinal
+YAYGIN HATALAR
 
-Divides data into categories and also provides an order.
+1. BÜYÜK ÖRNEKLEMİN HER ZAMAN İYİ SONUÇ VERECEĞİNİ DÜŞÜNMEK
 
-Example:
+Örneklem büyük olsa bile temsil edici değilse sonuç yanlış olabilir.
 
-Satisfaction level, education level
+Örnek:
 
-QUANTITATIVE DATA
+1936 yılında yapılan bir kamuoyu araştırmasında yaklaşık 2.4 milyon kişiden veri toplanmasına rağmen örneklem temsil edici olmadığı için sonuç yanlış çıkmıştır.
 
-Numerical Data
+2. İNTERNETTEKİ ANKETLERE KÖRÜ KÖRÜNE GÜVENMEK
 
-1. Discrete
+1000 kişinin internette verdiği cevap, tüm toplumun görüşünü temsil etmeyebilir.
 
-Obtained by counting.
+Çünkü yalnızca o internet sitesini ziyaret eden ve konu hakkında güçlü bir görüşü olan kişiler cevap vermiş olabilir.
 
-Example:
+3. SOKAKTA YAPILAN ANKETLERE GÜVENMEK
 
-Number of children, number of students
+Muhabirin sokakta karşılaştığı insanlara soru sorması en zayıf örnekleme yöntemlerinden biri olabilir.
 
-2. Continuous
+Çünkü yalnızca:
 
-Obtained by measurement.
+* O sokaktan geçenler
+* O anda zamanı olanlar
+* Sorulara cevap vermeye istekli olanlar
 
-Example:
+araştırmaya dahil edilir.
 
-Height, weight, temperature
+4. "ORTALAMA" KELİMESİNE KÖRÜ KÖRÜNE GÜVENMEK
 
-FOUR LEVELS OF MEASUREMENT
+"Ortalama aile geliri arttı."
 
-1. NOMINAL
+Bu cümleyi duyduğumuzda şu soruyu sormalıyız:
 
-Only divides data into categories.
+Ortalama nasıl hesaplandı?
 
-Examples:
+Ortalama gelir artmış olabilir.
 
-Color, gender, blood group
+Ancak bu, herkesin gelirinin arttığı anlamına gelmez.
 
-2. ORDINAL
+Örneğin zengin insanların gelirleri çok fazla artmışsa, genel ortalama yükselebilir.
 
-Divides data into categories and provides an order.
-
-Example:
-
-Satisfaction level
-
-3. INTERVAL
-
-The differences between values are equal and meaningful.
-
-However, there is no true zero.
-
-Example:
-
-Celsius temperature
-
-4. RATIO
-
-There are equal intervals and a true / absolute zero point.
-
-Ratio comparisons can be made.
-
-Examples:
-
-Height, weight, age, income, distance
-
-WHICH METHOD IS USED FOR WHICH TYPE OF DATA?
-
-NOMINAL:
-
-* Mode
-* Frequency
-* Percentage
-
-ORDINAL:
-
-* Mode
-* Median
-* Frequency
-* Percentage
-
-INTERVAL:
-
-* Mode
-* Median
-* Mean
-* Standard deviation
-* Variance
-
-RATIO:
-
-* Mode
-* Median
-* Mean
-* Standard deviation
-* Variance
-* Ratio comparisons
-* Other appropriate statistical methods
-
-THE EASIEST WAY TO REMEMBER
-
-Nominal = Category only
-
-Ordinal = Category + Order
-
-Interval = Order + Equal Intervals
-
-Ratio = Order + Equal Intervals + True Zero
-
-In short:
-
-Nominal → Category
-
-Ordinal → Category + Order
-
-Interval → Order + Equal Intervals
-
-Ratio → Order + Equal Intervals + True Zero
+Bu nedenle bazı durumlarda Median (Medyan), Mean'den (Ortalama) daha anlamlı olabilir.
