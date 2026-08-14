@@ -1,0 +1,452 @@
+LESSON 2
+
+DATA TYPES AND LEVELS OF MEASUREMENT
+
+Which Calculation Method Should Be Used for Which Type of Data?
+
+The most important principle:
+
+Each type of data has its own appropriate calculation method.
+
+DATA
+
+Data means all the information we collect about a subject, person, object, or event.
+
+Simply:
+
+Data = Collected information
+
+This information can be numbers, words, colors, names, or other types of information.
+
+EXAMPLE 1: EXAM SCORES
+
+The mathematics exam scores of 5 students in a class:
+
+75, 80, 90, 65, 85
+
+These 5 scores together are a Data set.
+
+EXAMPLE 2: HEIGHT
+
+The heights of 5 people:
+
+160, 165, 170, 158, 175 cm
+
+These numbers are also a Data set.
+
+TWO MAIN TYPES OF DATA
+
+1. QUALITATIVE DATA
+
+Categorical Data
+
+This type of data is not measured with numbers. It mainly describes a characteristic, quality, or category.
+
+Examples:
+
+* Gender: Male, Female
+* Color: Red, Blue, Green
+* Blood group: A, B, AB, O
+* Fruit type: Apple, Banana
+
+It is not appropriate to perform normal arithmetic operations or calculate the mean for these types of data.
+
+NOMINAL LEVEL
+
+Nominal Level is the most basic level of measurement.
+
+At this level, data are divided only into different categories.
+
+There is no ranking or order between the categories.
+
+1. DICHOTOMOUS DATA
+
+English:
+
+Dichotomous Data / Binary Data
+
+Explanation:
+
+This type of data has only two possible options.
+
+Examples:
+
+* Answer: Yes / No
+* Exam result: Pass / Fail
+* Product quality: Acceptable / Not acceptable
+
+2. MULTINOMIAL DATA
+
+English:
+
+Multinomial Data / Polytomous Data
+
+Explanation:
+
+This type of data has three or more possible options.
+
+However, there is no ranking or order between the options.
+
+Examples:
+
+* Eye color: Black, Brown, Blue, Green
+* Organization type: Government, Private, Foreign
+* Economic sector: Agriculture, Industry, Services
+
+3. IDENTIFIER NOMINAL DATA
+
+English:
+
+Identifier Nominal Data
+
+Explanation:
+
+This type of data is used to identify and distinguish a person, object, or record from others.
+
+These numbers do not have mathematical meaning.
+
+They are used only for identification.
+
+Examples:
+
+* ID number
+* Student number
+* Vehicle license plate number
+
+METHODS THAT CAN BE USED FOR NOMINAL DATA
+
+The most appropriate methods are:
+
+* Mode
+* Frequency
+* Percentage
+
+Mean and Median are not appropriate for nominal data.
+
+2. QUANTITATIVE DATA
+
+Numerical Data
+
+This type of data is expressed using numbers and mathematical calculations can be performed.
+
+Examples:
+
+* Age: 18, 20, 25
+* Height: 165 cm, 170 cm
+* Weight: 60 kg, 72 kg
+* Exam score: 80, 95, 76
+
+For these data, we can calculate the mean, maximum value, minimum value, and other statistics.
+
+MAIN TYPES OF QUANTITATIVE DATA
+
+1. DISCRETE DATA
+
+Explanation:
+
+Discrete Data are obtained by counting and consist of separate, distinct values.
+
+They are usually expressed as whole numbers.
+
+Examples:
+
+* Number of children in a family: 2, 3, 4
+* Number of students in a school
+* Number of visitors in a month
+
+For example:
+
+2.5 children or 3.7 students cannot normally be used.
+
+Therefore, these are called Discrete Data.
+
+2. CONTINUOUS DATA
+
+Explanation:
+
+Continuous Data can take any value within a certain range.
+
+They can include decimal and fractional values.
+
+They are usually obtained through measurement.
+
+Examples:
+
+* Height: 1.75 meters
+* Temperature: 36.6 °C
+* Weight: 68.5 kg
+* Speed: 72.5 km/hour
+
+LEVELS OF MEASUREMENT
+
+Data can be divided into 4 main levels of measurement:
+
+1. Nominal Level
+
+2. Ordinal Level
+
+3. Interval Level
+
+4. Ratio Level
+
+5. NOMINAL LEVEL
+
+Characteristics:
+
+Data are divided only into categories.
+
+There is no ranking or order between the categories.
+
+Examples:
+
+* Color
+* Gender
+* Blood group
+* Fruit type
+
+Main idea:
+
+It answers only the question:
+
+"Which category does it belong to?"
+
+2. ORDINAL LEVEL
+
+Characteristics:
+
+Data are divided into categories and can also be ranked or ordered.
+
+However, the exact difference between the categories is not known.
+
+Example:
+
+Satisfaction level:
+
+* Very satisfied
+* Satisfied
+* Neutral
+* Dissatisfied
+* Very dissatisfied
+
+There is an order.
+
+However, we cannot say that the difference between "Satisfied" and "Very satisfied" is exactly the same as the difference between "Neutral" and "Dissatisfied."
+
+METHODS THAT CAN BE USED FOR ORDINAL DATA
+
+* Mode
+* Median
+* Frequency
+* Percentage
+
+Mean is generally not appropriate.
+
+3. INTERVAL LEVEL
+
+Characteristics:
+
+The differences between values are equal and meaningful.
+
+However, there is no true or absolute zero point.
+
+In other words, a value of 0 does not mean that the measured thing completely does not exist.
+
+Example:
+
+Celsius temperature.
+
+0 °C does not mean that temperature does not exist.
+
+It represents a specific temperature point.
+
+For example:
+
+The difference between 20 °C and 30 °C is 10 °C.
+
+The difference between 10 °C and 20 °C is also 10 °C.
+
+Therefore, the differences between values are meaningful and equal.
+
+METHODS THAT CAN BE USED FOR INTERVAL DATA
+
+* Mode
+* Median
+* Mean
+* Standard deviation
+* Variance
+* Other appropriate statistical methods
+
+4. RATIO LEVEL
+
+Characteristics:
+
+Ratio Level has similar properties to Interval Level.
+
+However, Ratio Level has a true and absolute zero point.
+
+A value of 0 means that the measured quantity is actually absent.
+
+Ratio comparisons can also be made.
+
+Example:
+
+Money / Income:
+
+0 TL = No money.
+
+When comparing 100 TL and 200 TL:
+
+200 TL is twice as much as 100 TL.
+
+Another example:
+
+0 kg = No weight.
+
+20 kg is twice as much as 10 kg.
+
+METHODS THAT CAN BE USED FOR RATIO DATA
+
+Many statistical methods can be used with Ratio Level data.
+
+For example:
+
+* Mode
+* Median
+* Mean
+* Standard deviation
+* Variance
+* Ratio comparisons
+* Other appropriate statistical methods
+
+SHORT SUMMARY
+
+QUALITATIVE DATA
+
+Categorical Data
+
+1. Nominal
+
+Only divides data into categories.
+
+Example:
+
+Color, gender, blood group
+
+2. Ordinal
+
+Divides data into categories and also provides an order.
+
+Example:
+
+Satisfaction level, education level
+
+QUANTITATIVE DATA
+
+Numerical Data
+
+1. Discrete
+
+Obtained by counting.
+
+Example:
+
+Number of children, number of students
+
+2. Continuous
+
+Obtained by measurement.
+
+Example:
+
+Height, weight, temperature
+
+FOUR LEVELS OF MEASUREMENT
+
+1. NOMINAL
+
+Only divides data into categories.
+
+Examples:
+
+Color, gender, blood group
+
+2. ORDINAL
+
+Divides data into categories and provides an order.
+
+Example:
+
+Satisfaction level
+
+3. INTERVAL
+
+The differences between values are equal and meaningful.
+
+However, there is no true zero.
+
+Example:
+
+Celsius temperature
+
+4. RATIO
+
+There are equal intervals and a true / absolute zero point.
+
+Ratio comparisons can be made.
+
+Examples:
+
+Height, weight, age, income, distance
+
+WHICH METHOD IS USED FOR WHICH TYPE OF DATA?
+
+NOMINAL:
+
+* Mode
+* Frequency
+* Percentage
+
+ORDINAL:
+
+* Mode
+* Median
+* Frequency
+* Percentage
+
+INTERVAL:
+
+* Mode
+* Median
+* Mean
+* Standard deviation
+* Variance
+
+RATIO:
+
+* Mode
+* Median
+* Mean
+* Standard deviation
+* Variance
+* Ratio comparisons
+* Other appropriate statistical methods
+
+THE EASIEST WAY TO REMEMBER
+
+Nominal = Category only
+
+Ordinal = Category + Order
+
+Interval = Order + Equal Intervals
+
+Ratio = Order + Equal Intervals + True Zero
+
+In short:
+
+Nominal → Category
+
+Ordinal → Category + Order
+
+Interval → Order + Equal Intervals
+
+Ratio → Order + Equal Intervals + True Zero
