@@ -1,0 +1,454 @@
+2. DERS
+
+VERİ TÜRLERİ VE ÖLÇME DÜZEYLERİ
+
+Hangi Veri İçin Hangi Hesaplama Yöntemi Kullanılmalıdır?
+
+En önemli prensip:
+
+Her veri türünün kendine uygun hesaplama yöntemi vardır.
+
+DATA - VERİ
+
+Data (Veri), bir konu veya olay hakkında topladığımız bütün bilgileri ifade eder.
+
+Basitçe:
+
+Data = Toplanan bilgiler
+
+Bu bilgiler sayı, yazı, renk, isim veya başka türde bilgiler olabilir.
+
+ÖRNEK 1: SINAV NOTLARI
+
+Bir sınıfta 5 öğrencinin matematik sınavı notları:
+
+75, 80, 90, 65, 85
+
+Bu 5 notun tamamı birlikte bir Data (Veri) grubudur.
+
+ÖRNEK 2: BOY UZUNLUĞU
+
+5 kişinin boy uzunlukları:
+
+160, 165, 170, 158, 175 cm
+
+Bu sayılar da bir Data (Veri) grubudur.
+
+DATA'NIN İKİ TEMEL TÜRÜ
+
+1. QUALITATIVE DATA
+   Nitel Veri / Kategorik Veri
+
+Bu tür veriler sayılarla ölçülmez. Daha çok bir özelliği, türü veya kategoriyi gösterir.
+
+Örnekler:
+
+* Cinsiyet: Erkek, Kadın
+* Renk: Kırmızı, Mavi, Yeşil
+* Kan grubu: A, B, AB, O
+* Meyve türü: Elma, Muz
+
+Bu veriler üzerinde normal aritmetik işlemler yapmak veya ortalama almak uygun değildir.
+
+NOMINAL LEVEL
+Nominal Ölçme Düzeyi
+
+Nominal Level, verilerin yalnızca farklı kategorilere ayrıldığı en temel ölçme düzeyidir.
+
+Bu düzeyde kategoriler arasında herhangi bir sıralama veya üstünlük yoktur.
+
+1. İKİ SEÇENEKLİ NOMİNAL VERİ
+
+İngilizce:
+
+Dichotomous Data / Binary Data
+
+Açıklama:
+
+Bu veri türünde yalnızca iki olası seçenek bulunur.
+
+Örnekler:
+
+* Cevap: Evet / Hayır
+* Sınav sonucu: Geçti / Kaldı
+* Ürün kalitesi: Uygun / Uygun değil
+
+2. ÇOK SEÇENEKLİ NOMİNAL VERİ
+
+İngilizce:
+
+Multinomial Data / Polytomous Data
+
+Açıklama:
+
+Bu veri türünde üç veya daha fazla seçenek bulunur.
+
+Ancak seçenekler arasında herhangi bir sıralama veya derece yoktur.
+
+Örnekler:
+
+* Göz rengi: Siyah, Kahverengi, Mavi, Yeşil
+* Kurum türü: Devlet, Özel, Yabancı
+* Ekonomik sektör: Tarım, Sanayi, Hizmet
+
+3. KİMLİK BELİRLEYİCİ NOMİNAL VERİ
+
+İngilizce:
+
+Identifier Nominal Data
+
+Açıklama:
+
+Bu tür veriler bir kişiyi, nesneyi veya kaydı diğerlerinden ayırt etmek için kullanılır.
+
+Bu sayılar matematiksel anlam taşımaz. Sadece kimlik belirlemek için kullanılır.
+
+Örnekler:
+
+* Kimlik numarası
+* Öğrenci numarası
+* Araç plaka numarası
+
+NOMİNAL VERİLERDE KULLANILABİLECEK YÖNTEMLER
+
+En uygun yöntemler:
+
+* Mod (Mode)
+* Frekans (Frequency)
+* Yüzde / Oran (Percentage)
+
+Mean (Ortalama) ve Median (Medyan) kullanmak uygun değildir.
+
+2. QUANTITATIVE DATA
+
+Nicel Veri / Sayısal Veri
+
+Bu tür veriler sayılarla ifade edilir ve matematiksel işlemler yapılabilir.
+
+Örnekler:
+
+* Yaş: 18, 20, 25
+* Boy: 165 cm, 170 cm
+* Ağırlık: 60 kg, 72 kg
+* Sınav notu: 80, 95, 76
+
+Bu veriler için ortalama, en büyük değer, en küçük değer gibi hesaplamalar yapılabilir.
+
+QUANTITATIVE DATA'NIN TEMEL TÜRLERİ
+
+1. DISCRETE DATA
+
+Kesikli Veri
+
+Açıklama:
+
+Sayma yoluyla elde edilen ve belirli, ayrı değerlerden oluşan verilerdir.
+
+Genellikle tam sayılarla ifade edilir.
+
+Örnekler:
+
+* Bir ailenin çocuk sayısı: 2, 3, 4
+* Bir okuldaki öğrenci sayısı
+* Bir aydaki ziyaretçi sayısı
+
+Örneğin:
+
+2.5 çocuk veya 3.7 öğrenci şeklinde bir değer kullanılamaz.
+
+Bu nedenle bunlara Kesikli Veri (Discrete Data) denir.
+
+2. CONTINUOUS DATA
+
+Sürekli Veri
+
+Açıklama:
+
+Belirli bir aralık içinde herhangi bir değeri alabilen verilerdir.
+
+Ondalık değerler ve kesirli değerler de olabilir.
+
+Genellikle ölçme yoluyla elde edilir.
+
+Örnekler:
+
+* Boy uzunluğu: 1.75 metre
+* Sıcaklık: 36.6 °C
+* Ağırlık: 68.5 kg
+* Hız: 72.5 km/saat
+
+ÖLÇME DÜZEYLERİ
+
+Veriler, ölçme özelliklerine göre 4 temel düzeye ayrılır:
+
+1. Nominal Level
+
+2. Ordinal Level
+
+3. Interval Level
+
+4. Ratio Level
+
+5. NOMINAL LEVEL
+
+Nominal Ölçme Düzeyi
+
+Özelliği:
+
+Sadece kategorilere ayırır.
+
+Kategoriler arasında sıralama yoktur.
+
+Örnek:
+
+* Renk
+* Cinsiyet
+* Kan grubu
+* Meyve türü
+
+Temel özellik:
+
+Sadece "hangi gruba ait?" sorusuna cevap verir.
+
+2. ORDINAL LEVEL
+
+Ordinal Ölçme Düzeyi
+
+Sıralı / Dereceli Ölçme Düzeyi
+
+Özelliği:
+
+Veriler kategorilere ayrılır ve aynı zamanda sıralanabilir.
+
+Ancak kategoriler arasındaki farkın ne kadar olduğu kesin olarak bilinmez.
+
+Örnek:
+
+Memnuniyet düzeyi:
+
+* Çok memnun
+* Memnun
+* Kararsız
+* Memnun değil
+* Hiç memnun değil
+
+Burada bir sıralama vardır.
+
+Ancak "Memnun" ile "Çok memnun" arasındaki farkın, "Kararsız" ile "Memnun değil" arasındaki farkla aynı olduğunu söyleyemeyiz.
+
+ORDINAL VERİLERDE KULLANILABİLECEK YÖNTEMLER
+
+* Mod (Mode)
+* Medyan (Median)
+* Frekans
+* Yüzde / Oran
+
+Mean (Ortalama) kullanmak genellikle uygun değildir.
+
+3. INTERVAL LEVEL
+
+Aralık Ölçme Düzeyi
+
+Özelliği:
+
+Sayılar arasındaki farklar eşit ve anlamlıdır.
+
+Ancak gerçek ve mutlak bir sıfır noktası yoktur.
+
+Yani 0 değeri, ölçülen şeyin tamamen yok olduğu anlamına gelmez.
+
+Örnek:
+
+Celsius sıcaklığı.
+
+0 °C, sıcaklığın hiç olmadığı anlamına gelmez.
+
+Sadece belirli bir sıcaklık noktasını ifade eder.
+
+Örneğin:
+
+20 °C ile 30 °C arasındaki fark 10 °C'dir.
+
+10 °C ile 20 °C arasındaki fark da 10 °C'dir.
+
+Bu nedenle aradaki farklar anlamlı ve eşittir.
+
+INTERVAL VERİLERDE KULLANILABİLECEK YÖNTEMLER
+
+* Mod (Mode)
+* Medyan (Median)
+* Ortalama (Mean)
+* Standart sapma
+* Varyans
+* Diğer uygun istatistiksel yöntemler
+
+4. RATIO LEVEL
+
+Oran Ölçme Düzeyi
+
+Özelliği:
+
+Interval Level ile benzer özelliklere sahiptir.
+
+Ancak Ratio Level'da gerçek ve mutlak bir sıfır noktası vardır.
+
+0 değeri, ölçülen şeyin gerçekten olmadığını gösterir.
+
+Ayrıca oran karşılaştırmaları yapılabilir.
+
+Örnek:
+
+Para / Gelir:
+
+0 TL = Para yok.
+
+100 TL ile 200 TL karşılaştırıldığında:
+
+200 TL, 100 TL'nin 2 katıdır.
+
+Başka bir örnek:
+
+0 kg = Ağırlık yok.
+
+20 kg, 10 kg'ın 2 katıdır.
+
+RATIO VERİLERDE KULLANILABİLECEK YÖNTEMLER
+
+Ratio Level verilerinde birçok istatistiksel yöntem kullanılabilir.
+
+Örneğin:
+
+* Mod (Mode)
+* Medyan (Median)
+* Ortalama (Mean)
+* Standart sapma
+* Varyans
+* Oran karşılaştırmaları
+* Diğer uygun istatistiksel yöntemler
+
+KISA ÖZET
+
+QUALITATIVE DATA
+Nitel / Kategorik Veri
+
+1. Nominal
+   Sadece kategorilere ayırır.
+
+   Örnek:
+   Renk, cinsiyet, kan grubu
+
+2. Ordinal
+   Kategorilere ayırır ve sıralama yapar.
+
+   Örnek:
+   Memnuniyet düzeyi, eğitim düzeyi
+
+QUANTITATIVE DATA
+Nicel / Sayısal Veri
+
+1. Discrete
+   Kesikli Veri
+
+   Sayma yoluyla elde edilir.
+
+   Örnek:
+   Çocuk sayısı, öğrenci sayısı
+
+2. Continuous
+   Sürekli Veri
+
+   Ölçme yoluyla elde edilir.
+
+   Örnek:
+   Boy, kilo, sıcaklık
+
+DÖRT ÖLÇME DÜZEYİ
+
+1. NOMINAL
+
+Sadece kategorilere ayırır.
+
+Örnek:
+
+Renk, cinsiyet, kan grubu
+
+2. ORDINAL
+
+Kategorilere ayırır ve sıralama yapar.
+
+Örnek:
+
+Memnuniyet düzeyi
+
+3. INTERVAL
+
+Değerler arasındaki farklar eşittir ve anlamlıdır.
+
+Ancak gerçek sıfır yoktur.
+
+Örnek:
+
+Celsius sıcaklığı
+
+4. RATIO
+
+Eşit aralık vardır ve gerçek / mutlak sıfır noktası bulunur.
+
+Oran karşılaştırmaları yapılabilir.
+
+Örnek:
+
+Boy, kilo, yaş, gelir, mesafe
+
+HANGİ VERİDE HANGİ YÖNTEM KULLANILIR?
+
+NOMINAL:
+
+* Mod
+* Frekans
+* Yüzde
+
+ORDINAL:
+
+* Mod
+* Medyan
+* Frekans
+* Yüzde
+
+INTERVAL:
+
+* Mod
+* Medyan
+* Ortalama
+* Standart sapma
+* Varyans
+
+RATIO:
+
+* Mod
+* Medyan
+* Ortalama
+* Standart sapma
+* Varyans
+* Oran karşılaştırmaları
+* Diğer uygun istatistiksel yöntemler
+
+EN KOLAY HATIRLAMA YÖNTEMİ
+
+Nominal = Sadece isim / kategori
+
+Ordinal = İsim + sıralama
+
+Interval = Sıralama + eşit aralık
+
+Ratio = Sıralama + eşit aralık + gerçek sıfır
+
+Kısaca:
+
+Nominal → Kategori
+
+Ordinal → Kategori + Sıralama
+
+Interval → Sıralama + Eşit Aralık
+
+Ratio → Sıralama + Eşit Aralık + Gerçek Sıfır
